@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+{% seo %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    {% include header.html %}
+    <section class="description">
+      <div> this is the description: {{ page.description }}</div>
+    </section>
+    <section class="main-content">
+
+    {% for image in page.images %}
+      <img src="{{image}}">
+    {% endfor %}
+      </section>
+  </body>
+</html>
