@@ -15,12 +15,12 @@
   <body>
     {% include header.html %}
     <section class="description">
-      <div> this is the description: {{ page.description }}</div>
+      <div>{{ page.description }}</div>
     </section>
     <section class="main-content">
 
     {% for image in page.images %}
-      <img src="{{image}}">
+      <img src="/assets/img/{{image}}">
     {% endfor %}
       </section>
   </body>
