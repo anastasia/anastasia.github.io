@@ -5,23 +5,23 @@
 @import "{{ site.theme }}";
 
 body {
-  font-family: "Fira Code";
+  font-family: "Fira Code", monospace;
 }
 
 section.description {
   width: 300px;
-}
-
-section.main-content {
-  float:right;
+  div {
+    padding: 0 1em;
+  }
 }
 
 header ul {
   background: transparent;
   display: grid;
-  border: 0px;
+  border: 0;
   > li {
     display: block;
+    width: auto !important;
     a {
       text-align: left;
     }
