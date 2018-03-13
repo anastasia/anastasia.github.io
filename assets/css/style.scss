@@ -7,6 +7,9 @@
 body {
   font-family: "Fira Code", monospace;
 }
+section {
+  border: 0;
+}
 
 section.description {
   width: 300px;
@@ -14,24 +17,36 @@ section.description {
     padding: 0 1em;
   }
 }
+//
+//section.main-content {
+//  float:right;
+//}
 
-section.main-content {
-  float:right;
+.project-list {
+  position: fixed;
 }
-
-header ul {
+.project-list ul {
+  padding: 0;
   background: transparent;
   display: grid;
   border: 0;
   > li {
     display: block;
-    width: auto !important;
+    color: #000000;
     a {
       text-align: left;
+      padding: 0;
+      color: #000000;
+    }
+    a:hover {
+      font-style: normal;
+      font-weight: 300;
+      color: #0000ff;
+      text-decoration: none;
     }
   }
 }
+
 header li {
-  border-right: 0px;
-  //border-bottom: 1px solid #9b9b9b;
+  border-right: 0;
 }

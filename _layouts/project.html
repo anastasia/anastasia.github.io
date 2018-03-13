@@ -14,10 +14,10 @@
   </head>
   <body>
     {% include header.html %}
-    <section class="description">
+    <div class="col-4 description">
       <div class="description-text">{{ page.description }}</div>
-    </section>
-    <section class="main-content">
+    </div>
+    <section class="col-md-auto main-content">
 
     {% for image in page.images %}
       <img src="/assets/img/{{image}}">

@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Overheard in LIL"
+title:  "Overheard in LIL podcast"
 categories: projects
 slug: lil-podcast
 description: ""
