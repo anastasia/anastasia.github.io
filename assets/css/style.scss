@@ -10,9 +10,13 @@ body {
 
 section.description {
   width: 300px;
-  div {
+  div.description-text {
     padding: 0 1em;
   }
+}
+
+section.main-content {
+  float:right;
 }
 
 header ul {
