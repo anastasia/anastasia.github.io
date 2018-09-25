@@ -7,24 +7,11 @@
 body {
   font-family: "Fira Code", monospace;
 }
-section {
-  border: 0;
+
+li {
+  list-style: none;
 }
 
-section.description {
-  width: 300px;
-  div.description-text {
-    padding: 0 1em;
-  }
-}
-//
-//section.main-content {
-//  float:right;
-//}
-
-.project-list {
-  position: fixed;
-}
 .project-list ul {
   padding: 0;
   background: transparent;
@@ -49,4 +36,9 @@ section.description {
 
 header li {
   border-right: 0;
+}
+
+
+img {
+  margin-bottom: 20px;
 }

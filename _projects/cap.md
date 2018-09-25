@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  "CAP API"
+title:  "Caselaw Access Project"
 categories: projects
-slug: cap-api
+slug: cap
 description: ""
 images: []
 ---

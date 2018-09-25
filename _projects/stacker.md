@@ -2,10 +2,9 @@
 layout: project
 title:  "Stacker.cc"
 categories: projects
-slug: stacker.cc
+slug: stacker
 description: ""
 images: []
 ---
-
 
 
