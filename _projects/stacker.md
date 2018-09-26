@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Stacker.cc"
+title:  "stacker"
 categories: projects
 slug: stacker
 description: ""

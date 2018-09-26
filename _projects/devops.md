@@ -4,5 +4,8 @@ title:  "devops"
 categories: projects
 slug: devops
 images: ["devops.gif"]
-description: "Needed to hire a devops engineer"
+tags: ["design", "poster"]
+description: >-
+    <p>Library Innovation Lab needed to hire a devops engineer.</p>
+    <p>This is a simple solution — black &amp; white printout on color paper, leading a person to our application form.</p>
 ---

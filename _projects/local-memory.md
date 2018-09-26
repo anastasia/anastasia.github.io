@@ -2,8 +2,8 @@
 layout: project
 title:  "Local Memory"
 categories: projects
-slug: local-memory
-description: "Local Memory"
+slug: localmem
+description: "Local something or other"
 images: ["local-memory-project-2.jpg", "local-memory-project-1.jpg"]
 ---
 
