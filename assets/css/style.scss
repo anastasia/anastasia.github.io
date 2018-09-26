@@ -1,15 +1,31 @@
 ---
 ---
-
-
 @import "{{ site.theme }}";
+
+$color-black: #2f2f2f;
+$color-gray: #777;
+$color-yellow: #FFF650;
+$color-blue: #0000ff;
+
+::selection {
+  background: $color-yellow; /* WebKit/Blink Browsers */
+  color: $color-black;
+}
+
+::-moz-selection {
+  background: $color-yellow; /* Gecko Browsers */
+  color: $color-black;
+}
 
 body {
   font-family: "Fira Code", monospace;
+  color: $color-black;
+
 }
 
 li {
   list-style: none;
+  margin-bottom: 0.5rem;
 }
 
 .project-list ul {
@@ -19,17 +35,21 @@ li {
   border: 0;
   > li {
     display: block;
-    color: #000000;
+    color: $color-black;
     a {
       text-align: left;
       padding: 0;
-      color: #000000;
+      color: $color-black;
     }
     a:hover {
       font-style: normal;
       font-weight: 300;
-      color: #0000ff;
+      color: $color-blue;
       text-decoration: none;
+    }
+    a:focus {
+      font-weight: normal;
+      background-color: $color-yellow;
     }
   }
 }
@@ -41,4 +61,23 @@ header li {
 
 img {
   margin-bottom: 20px;
+}
+
+.site-description {
+  color: $color-gray;
+}
+.description-text {
+  margin-bottom: 1rem;
+  font-family: "Georgia", serif;
+  color: #333;
+  font-size: 1rem;
+
+}
+
+.main-content {
+  margin-top: -80px;
+}
+
+li.list-item.page > a {
+  color: $color-gray;
 }

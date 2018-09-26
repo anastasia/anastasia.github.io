@@ -5,6 +5,7 @@ categories: projects
 slug: cap
 description: ""
 images: []
+tags: [code, design]
 ---
 
 
