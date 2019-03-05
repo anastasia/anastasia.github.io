@@ -7,27 +7,96 @@ $color-gray: #777;
 $color-yellow: #FFF650;
 $color-blue: #0000ff;
 
+
+@font-face {
+  font-family: 'hk_grotesk';
+  src: url('/assets/font/hkgrotesk-bolditalic-webfont.woff2') format('woff2'),
+  url('/assets/font/hkgrotesk-bolditalic-webfont.woff') format('woff');
+  font-weight: bold;  font-style: italic;
+}
+
+@font-face {
+  font-family: 'hk_grotesk';
+  src: url('/assets/font/hkgrotesk-italic-webfont.woff2') format('woff2'),
+  url('/assets/font/hkgrotesk-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'hk_grotesk';
+  src: url('/assets/font/hkgrotesk-lightitalic-webfont.woff2') format('woff2'),
+  url('/assets/font/hkgrotesk-lightitalic-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'hk_grotesk';
+  src: url('/assets/font/hkgrotesk-mediumitalic-webfont.woff2') format('woff2'),
+  url('/assets/font/hkgrotesk-mediumitalic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'hk_grotesk';
+  src: url('/assets/font/hkgrotesk-semibolditalic-webfont.woff2') format('woff2'),
+  url('/assets/font/hkgrotesk-semibolditalic-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'hk_grotesk';
+  src: url('/assets/font/hkgrotesk-bold-webfont.woff2') format('woff2'),
+  url('/assets/font/hkgrotesk-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hk_grotesk';
+  src: url('/assets/font/hkgrotesk-light-webfont.woff2') format('woff2'),
+  url('/assets/font/hkgrotesk-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hk_grotesk';
+  src: url('/assets/font/hkgrotesk-medium-webfont.woff2') format('woff2'),
+  url('/assets/font/hkgrotesk-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 ::selection {
-  background: $color-yellow; /* WebKit/Blink Browsers */
-  color: $color-black;
+  background: $color-yellow; /* WebKit/Blink Browsers */color: $color-black;
 }
 
 ::-moz-selection {
-  background: $color-yellow; /* Gecko Browsers */
-  color: $color-black;
+  background: $color-yellow; /* Gecko Browsers */color: $color-black;
 }
 
 body {
-  font-family: "Fira Code", monospace;
+  font-family: "hk_grotesk", sans-serif;
   color: $color-black;
-
 }
 
 li {
-  list-style: none;
-  margin-bottom: 0.5rem;
+  list-style: none;margin-bottom: 0.5rem;
 }
 
+a {
+  &:hover, &:focus, &:active {
+    font-weight: normal;
+    color: $color-blue;
+    text-decoration: none;
+    border-bottom: 1px solid $color-blue;
+    padding-bottom: 3px;
+  }
+}
 .project-list ul {
   padding: 0;
   background: transparent;
@@ -50,8 +119,7 @@ li {
     a:focus {
       font-weight: normal;
       background-color: $color-yellow;
-    }
-  }
+    } }
 }
 
 header li {
@@ -71,7 +139,6 @@ img {
   font-family: "Georgia", serif;
   color: #333;
   font-size: 1rem;
-
 }
 
 .main-content {
@@ -80,4 +147,27 @@ img {
 
 li.list-item.page > a {
   color: $color-gray;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  &:hover, &:active, &:focus {
+    border-bottom: 0;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+  }
+  //.carousel-control-prev-icon {
+  //  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/></svg>");
+  //  margin-left: -40px;
+  //}
+  //.carousel-control-next-icon {
+  //  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+  //  margin-right: -50px;
+  //}
+}
+.carousel-indicators {
+  li {
+    background-color: $color-black;
+    width: 5px;
+  }
 }
