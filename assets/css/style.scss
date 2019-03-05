@@ -171,3 +171,29 @@ li.list-item.page > a {
     width: 5px;
   }
 }
+.tags-key {
+  li {
+    margin-bottom: 0;
+    color: $color-gray !important;
+  }
+}
+.pixel {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 3px;
+  &.blue, &.design {
+    background-color: $color-blue;
+  }
+  &.red, &.code {
+    background-color: orangered;
+  }
+  &.hardware {
+    background-color: mediumvioletred;
+  }
+  &.green, &.advertising {
+    background-color: forestgreen;
+  }
+
+}

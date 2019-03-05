@@ -1,7 +1,15 @@
 <ul>
-{% for project in site.projects %}
+  {% assign tags = site.tags %}
+{% assign sorted_projects = site.projects | sort:"order" %}
+{% for project in sorted_projects %}
   <li class="list-item project">
-    <a href="/projects/{{ project.slug }}">{{ project.slug }}</a>
+    <a href="/projects/{{ project.slug }}">
+      {{ project.slug }}
+    </a>
+      {% for tag in project.tags %}
+        <span class="pixel {{ tag }}" title="{{tag}}"></span>
+      {% endfor %}
+
   </li>
 {% endfor %}
   <li>
