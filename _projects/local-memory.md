@@ -1,10 +1,8 @@
 ---
 layout: project
-title:  "Local Memory"
+title:  "Local Memory Project"
 categories: projects
-slug: localmem
-description: "Local something or other"
+slug: local-memory
+description: "identity for a project that lets seasoned archivists and novices build collections of local stories using local news sources"
 images: ["local-memory-project-2.jpg", "local-memory-project-1.jpg"]
 ---
-
-
