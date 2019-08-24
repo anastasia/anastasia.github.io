@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   {% seo %}
 
@@ -21,27 +21,113 @@
   <![endif]-->
 </head>
 <body>
-  <div class="container-fluid">
-    {% include header.html %}
-    <div class="row">
-      <div class="col-sm-3 project-list">
-        {% include key.html %}
-        {% include nav.html %}
-      </div>
+<div class="container-fluid">
+  {% include header.html %}
+  <div class="row">
+    <div class="col-sm-3 project-list">
+      {% include key.html %}
+      {% include nav.html %}
+    </div>
 
-      <div class="col-sm-9 col-lg-6 main-content">
-        <div class="description-text">
-          {{ page.description }}
+    <div class="col-sm-9 col-lg-6 main-content">
+      <div class="project-title">{{ page.title }}</div>
+      <div class="description-text">
+
+        <p class="project-links">
+          {% if page.github %}
+          <span>&#215; <a href="https://github.com/{{ page.github }}">
+            github code
+          </a></span>
+          {% endif %}
+          &nbsp;
+          {% if page.website %}
+          <span>&#215; <a href="{{ page.website }}">project website</a></span>
+          {% endif %}
+        </p>
+        {{ page.description }}
+      </div>
+      {% if page.carousel_0 %}
+
+      <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+        <div class="carousel-inner">
+          {% for image in page.carousel_0 %}
+          <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
+            <a href="/assets/img/{{image}}">
+              <img class="d-block w-100" src="/assets/img/{{image}}" alt="{{ page.carousel_0_alt}}">
+            </a>
+          </div>
+          {% endfor %}
         </div>
-
-        {% for image in page.images %}
-        <img src="/assets/img/{{image}}">
-        {% endfor %}
-        {% if page.slug == 'stacker' %}
-        <iframe src="//view.stacker.cc/newsbound/fog_demo/index.html?embed=true" name="nb-stack"
-                class="newsbound-embedded" allowfullscreen="" width="675" height="380" frameborder="0"></iframe>
-        {% endif %}
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+
+
+      {% endif %}
+
+      {% if page.description_0 %}
+      <div class="description-text">
+        {{ page.description_0 }}
+      </div>
+      {% endif %}
+
+      {% for image in page.images %}
+      <a target="_blank" href="/assets/img/{{image}}">
+        <img src="/assets/img/{{image}}">
+      </a>
+      {% endfor %}
+      {% if page.slug == 'stacker' %}
+      <iframe src="//view.stacker.cc/newsbound/fog_demo/index.html?embed=true" name="nb-stack"
+              class="newsbound-embedded" allowfullscreen="" width="675" height="380" frameborder="0"></iframe>
+      {% endif %}
+
+      {% for image in page.images_desc %}
+      <ul class="project-list">
+        <li>
+          <a target="_blank" href="/assets/img/{{image.image}}">
+            <img src="/assets/img/{{image.image}}"/>
+          </a>
+          <span class="float-right">{{ image.desc }}</span>
+          <br/><br/>
+        </li>
+      </ul>
+      {% endfor %}
+
+      {% if page.carousel_1 %}
+
+      <div id="carouselExampleControls2" class="carousel slide" data-interval="false">
+        <div class="carousel-inner">
+          {% for image in page.carousel_1 %}
+          <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
+            <img class="d-block w-100" src="/assets/img/{{image.image}}" alt="{{ page.carousel_1_alt}}">
+            {% if image.desc %}
+            <div class="carousel-caption d-none d-md-block">
+              <p class="float-right">{{ image.desc }}</p>
+            </div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      {% endif
+
+      {% if page.news %}
     </div>
   </div>
 </div>
