@@ -23,6 +23,11 @@
   {% include header.html %}
   <div class="row">
     <div class="col-sm-3 project-list">
+      <a href="{{ site.github.url }}">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+      </a>
+      <p class="site-description">
+        {{ site.description | default: sitea.github.project_tagline }}</p>
       {% include key.html %}
       {% include nav.html %}
     </div>
