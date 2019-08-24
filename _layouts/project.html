@@ -25,10 +25,14 @@
   {% include header.html %}
   <div class="row">
     <div class="col-sm-3 project-list">
+      <a href="{{ site.github.url }}">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+      </a>
+      <p class="site-description">
+        {{ site.description | default: site.github.project_tagline }}</p>
       {% include key.html %}
       {% include nav.html %}
     </div>
-
     <div class="col-sm-9 col-lg-6 main-content">
       <div class="project-title">{{ page.title }}</div>
       <div class="description-text">
@@ -52,7 +56,8 @@
         <div class="carousel-inner">
           {% for image in page.carousel_0 %}
           <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
-            <img class="d-block w-100" src="/assets/img/{{image.image}}" alt="{% if image.desc %}{{ image.desc }}{% endif %}">
+            <img class="d-block w-100" src="/assets/img/{{image.image}}"
+                 alt="{% if image.desc %}{{ image.desc }}{% endif %}">
             {% if image.desc %}
             <div class="carousel-caption d-none d-md-block">
               <p class="float-right">{{ image.desc }}</p>
