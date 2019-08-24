@@ -52,9 +52,12 @@
         <div class="carousel-inner">
           {% for image in page.carousel_0 %}
           <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
-            <a href="/assets/img/{{image}}">
-              <img class="d-block w-100" src="/assets/img/{{image}}" alt="{{ page.carousel_0_alt}}">
-            </a>
+            <img class="d-block w-100" src="/assets/img/{{image.image}}" alt="{% if image.desc %}{{ image.desc }}{% endif %}">
+            {% if image.desc %}
+            <div class="carousel-caption d-none d-md-block">
+              <p class="float-right">{{ image.desc }}</p>
+            </div>
+            {% endif %}
           </div>
           {% endfor %}
         </div>
@@ -67,8 +70,11 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
-
+      {% if page.carousel_0_desc %}
+      <div class="description-text carousel-description">
+        {{page.carousel_0_desc}}
+      </div>
+      {% endif %}
       {% endif %}
 
       {% if page.description_0 %}
@@ -105,7 +111,7 @@
         <div class="carousel-inner">
           {% for image in page.carousel_1 %}
           <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
-            <img class="d-block w-100" src="/assets/img/{{image.image}}" alt="{{ page.carousel_1_alt}}">
+            <img class="d-block w-100" src="/assets/img/{{image.image}}" alt="{{ image.desc }}">
             {% if image.desc %}
             <div class="carousel-caption d-none d-md-block">
               <p class="float-right">{{ image.desc }}</p>
@@ -123,11 +129,15 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      {% if page.carousel_1_desc %}
+      <div class="description-text carousel-description">
+        {{page.carousel_1_desc}}
+      </div>
+      {% endif %}
 
 
-      {% endif
+      {% endif %}
 
-      {% if page.news %}
     </div>
   </div>
 </div>

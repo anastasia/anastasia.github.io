@@ -3,7 +3,7 @@ layout: project
 title:  "Alterspace"
 categories: projects
 slug: alterspace
-order: 1
+order: 0
 github: "harvard-lil/alter-space"
 website: "https://lil.law.harvard.edu/projects/alterspace/"
 description: >-
@@ -35,10 +35,10 @@ images: [
 
 carousel_1: [
     {image: "alterspace/SCHOENBAUM_1B_PHOTO1.jpg", desc: "Cambridge Public Library. Credit: Hannah Schoenbaum"},
-    {image: "alterspace/langdell.jpg", desc: "Langdell Hall"},
+    {image: "alterspace/langdell.jpg", desc: "Langdell Library"},
     {image: "alterspace/SCHOENBAUM_1B_PHOTO3.jpg", desc: "Cambridge Public Library. Credit: Hannah Schoenbaum"},
     {image: "alterspace/spl.jpg", desc: "Somerville Public Library"},
-    {image: "alterspace/langdell-ipad.jpg", desc: "Langdell Hall"},
+    {image: "alterspace/langdell-ipad.jpg", desc: "Langdell Library"},
 ]
 
 images_desc: [

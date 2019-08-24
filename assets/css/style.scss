@@ -97,7 +97,6 @@ a {
     font-weight: normal;
     color: $color-blue;
     text-decoration: none;
-    border-bottom: 1px solid $color-blue;
     padding-bottom: 3px;
   }
 }
@@ -213,7 +212,7 @@ ul.tags-key {
   &.hardware {
     background-color: mediumvioletred;
   }
-  &.green, &.advertising {
+  &.green, &.other {
     background-color: forestgreen;
   }
 
