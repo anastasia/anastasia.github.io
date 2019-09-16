@@ -3,7 +3,7 @@ layout: project
 title:  "epa"
 categories: projects
 slug: epa
-order: 3
+order: 4
 images: ["epa2017_2260_Page_1.jpg", "epa2017_2260_Page_2.jpg"]
 tags: ["code"]
 description: >-
