@@ -33,17 +33,15 @@ images: [
     "alterspace/alterspace.gif",
 ]
 
-carousel_1: [
+
+images_desc: [
+    {image: "alterspace/ipads.png", desc: "App code + design"},
+    {image: "alterspace/poster-hanging.png", desc: "Poster design"},
     {image: "alterspace/SCHOENBAUM_1B_PHOTO1.jpg", desc: "Cambridge Public Library. Credit: Hannah Schoenbaum"},
     {image: "alterspace/langdell.jpg", desc: "Langdell Library"},
     {image: "alterspace/SCHOENBAUM_1B_PHOTO3.jpg", desc: "Cambridge Public Library. Credit: Hannah Schoenbaum"},
     {image: "alterspace/spl.jpg", desc: "Somerville Public Library"},
     {image: "alterspace/langdell-ipad.jpg", desc: "Langdell Library"},
-]
-
-images_desc: [
-    {image: "alterspace/ipads.png", desc: "App code + design"},
-    {image: "alterspace/poster-hanging.png", desc: "Poster design"},
 ]
     
 

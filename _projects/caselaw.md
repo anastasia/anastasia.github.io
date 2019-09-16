@@ -9,13 +9,12 @@ github: "harvard-lil/capstone"
 website: "https://case.law"
 description: >-
     <p>Design and code for <a href="https://case.law">Caselaw Access Project</a> — expanding public access to 360 years of case law.</p>
-carousel_0: [
+images_desc: [
     {image: "cap/cap-01.png"}, 
     {image: "cap/cap-02.png"}, 
     {image: "cap/cap-03.png"},
     {image: "cap/cap-04.png"},
     ]
-images: []
 tags: ["code", "design"]
 ---
 
