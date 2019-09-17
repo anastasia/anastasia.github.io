@@ -3,7 +3,7 @@ layout: project
 title:  "LILFest"
 categories: projects
 slug: lilfest
-order: 3
+order: 2
 description: >-
     <p>Art direction and design to make a work retreat a little more special.</p>
     <p>This is a collaboration with LIL's <a href="https://twitter.com/clare__stanton">Clare Stanton</a>.</p>

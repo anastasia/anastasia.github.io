@@ -3,7 +3,7 @@ layout: project
 title:  "Recollected"
 categories: projects
 slug: recollected
-order: 2
+order: 3
 website: "https://recollected.org"
 description: >-
     <p>Stories about things it would hurt to lose.</p>
