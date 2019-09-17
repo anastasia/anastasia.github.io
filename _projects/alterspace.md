@@ -9,7 +9,7 @@ website: "https://lil.law.harvard.edu/projects/alterspace/"
 description: >-
         <p>A prototype project that gives library patrons control over their space, allowing them to change lights and sounds.</p>
         <p>We deployed Alterspace in three libraries: Cambridge Public Library, Somerville Public Library, and Langdell Hall in Harvard Law School.</p>
-        <p>This is a collaboration between <a target="_blank" href="https://lil.law.harvard.edu">Library Innovation Lab</a> and 
+        <p>This is a collaboration between <a target="_blank" href="https://lil.law.harvard.edu">Library Innovation Lab's</a> (<a href="https://twitter.com/clare__stanton">Clare Stanton</a>, <a href="https://www.instagram.com/andygoddamnedsilva/">Andy Silva</a>, myself) and 
         <a target="_blank" href="https://metalab.github.io">metaLAB</a>, funded by the <a target="_blank" href="https://knightfoundation.org">Knight Foundation.</a></p>
         <!--<div id="poster-carousel" class='carousel slide' data-ride="carousel" data-interval="false">
         <ol class="carousel-indicators">
@@ -26,7 +26,7 @@ description: >-
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="/assets/img/alterspace/alterspace-magenta.png"/>
-            </div>
+            </div>  
           </div>
         </div>-->
 images: [ 
