@@ -22,30 +22,24 @@
 </head>
 <body>
 <div class="container-fluid">
-  {% include header.html %}
   <div class="row">
-    <div class="col-sm-3 project-list">
-      <a href="{{ site.github.url }}">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-      </a>
-      <p class="site-description">
-        {{ site.description | default: site.github.project_tagline }}</p>
-      {% include key.html %}
+    <div class="col-xs-3 sidebar">
+      {% include header.html %}
+      <!--{% include key.html %}-->
       {% include nav.html %}
     </div>
-    <div class="col-sm-9 col-lg-6 main-content">
+    <main class="col-sm-9 col-lg-7 main-content">
       <div class="project-title">{{ page.title }}</div>
       <div class="description-text">
 
         <p class="project-links">
           {% if page.github %}
-          <span>&#215; <a href="https://github.com/{{ page.github }}">
-            github code
-          </a></span>
+          <span>
+            [<a href="https://github.com/{{ page.github }}"> code </a>]
+          </span>
           {% endif %}
-          &nbsp;
           {% if page.website %}
-          <span>&#215; <a href="{{ page.website }}">project website</a></span>
+          <span>[<a href="{{ page.website }}"> website </a></span>]
           {% endif %}
         </p>
         {{ page.description }}
@@ -143,7 +137,7 @@
 
       {% endif %}
 
-    </div>
+    </main>
   </div>
 </div>
 </body>

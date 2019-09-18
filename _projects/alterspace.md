@@ -48,5 +48,5 @@ images_desc: [
 tags: 
     - design
     - code
-    - hardware
+    - other
 ---

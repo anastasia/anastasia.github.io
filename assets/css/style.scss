@@ -8,6 +8,15 @@ $color-gray: #777;
 $color-yellow: #FFF650;
 $color-blue: #0000ff;
 
+$xs: 575.98px;
+$sm-min: 576px;
+$sm-max: 767.98px;
+$md-min: 768px;
+$md-max: 991.98px;
+$lg-min: 992px;
+$lg-max: 1199.98px;
+$xl: 1200px;
+
 @font-face {
   font-family: 'hk_grotesk';
   src: url('/assets/font/hkgrotesk-bolditalic-webfont.woff2') format('woff2'),
@@ -85,6 +94,7 @@ $color-blue: #0000ff;
 body {
   font-family: "hk_grotesk", sans-serif;
   color: $color-black;
+  //font-size: 1.25em;
 }
 
 li {
@@ -109,8 +119,12 @@ li > img, li > a > img {
   margin-bottom: 0;
 }
 
+.sidebar {
+  position: fixed;
+  overflow-y: scroll;
+}
 
-.project-list ul {
+.sidebar ul {
   padding: 0;
   background: transparent;
   display: grid;
@@ -122,10 +136,12 @@ li > img, li > a > img {
       text-align: left;
       padding: 0;
       color: $color-black;
+      &:hover, &:active, &:focus {
+        border-bottom: 1px solid $color-blue;
+      }
     }
     a:hover {
       font-style: normal;
-      font-weight: 300;
       color: $color-blue;
       text-decoration: none;
     }
@@ -134,6 +150,21 @@ li > img, li > a > img {
       background-color: $color-yellow;
     }
   }
+}
+
+.main-content {
+  width: auto;
+  margin-left: 300px;
+  @media (max-width: $xs) {
+    margin-left: 165px;
+  }
+  @media (min-width: $sm-min) and (max-width: $sm-max) {
+    margin-left: 200px;
+  }
+  @media (min-width: $md-min) and (max-width: $md-max) {
+    margin-left: 220px;
+  }
+
 }
 
 header li {
@@ -146,6 +177,9 @@ img {
 
 .site-description {
   color: $color-gray;
+  @media (max-width: $md-max) {
+    display: none;
+  }
 }
 
 .project-title {
@@ -159,7 +193,7 @@ img {
 .description-text {
   margin-bottom: 1rem;
   color: #333;
-  font-size: 1rem;
+  font-size: 1.2em;
 }
 
 li.list-item.page > a {
@@ -192,6 +226,7 @@ li.list-item.page > a {
 
 ul.tags-key {
   li {
+    font-size: 1rem;
     margin-bottom: 0;
     color: $color-gray !important;
     font-style: italic;
@@ -209,9 +244,6 @@ ul.tags-key {
   }
   &.red, &.code {
     background-color: orangered;
-  }
-  &.hardware {
-    background-color: mediumvioletred;
   }
   &.green, &.other {
     background-color: forestgreen;

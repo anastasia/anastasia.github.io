@@ -15,12 +15,4 @@
   <li>
     &nbsp;
   </li>
-  {% for page in site.pages %}
-  {% if page.permalink %}
-  <li class="list-item page">
-    <a href="{{ page.permalink }}"> {{ page.title }} </a>
-  </li>
-  {% endif %}
-  {% endfor %}
-  <!--<a href="#{{ tag | slugify }}"> {{ tag }} </a>-->
 </ul>
