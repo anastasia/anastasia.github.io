@@ -54,7 +54,7 @@
                  alt="{% if image.desc %}{{ image.desc }}{% endif %}">
             {% if image.desc %}
             <div class="carousel-caption d-none d-md-block">
-              <p class="float-right">{{ image.desc }}</p>
+              <p class="image-description float-right">{{ image.desc }}</p>
             </div>
             {% endif %}
           </div>
@@ -98,7 +98,7 @@
           <a target="_blank" href="/assets/img/{{image.image}}">
             <img src="/assets/img/{{image.image}}"/>
           </a>
-          <span class="float-right">{{ image.desc }}</span>
+          <span class="image-description float-right">{{ image.desc }}</span>
           <br/><br/>
         </li>
       </ul>

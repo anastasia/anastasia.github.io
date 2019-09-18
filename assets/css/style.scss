@@ -164,7 +164,9 @@ li > img, li > a > img {
   @media (min-width: $md-min) and (max-width: $md-max) {
     margin-left: 220px;
   }
-
+  .image-description {
+    font-size: 1.2em;
+  }
 }
 
 header li {
