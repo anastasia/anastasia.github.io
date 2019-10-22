@@ -2,6 +2,7 @@
   {% assign tags = site.tags %}
   {% assign sorted_projects = site.projects | sort:"order" %}
   {% for project in sorted_projects %}
+  {% if project.show %}
   <li class="list-item project">
     <a href="/projects/{{ project.slug }}">
       {{ project.slug }}
@@ -11,6 +12,7 @@
     {% endfor %}
 
   </li>
+  {% endif %}
   {% endfor %}
   <li>
     &nbsp;

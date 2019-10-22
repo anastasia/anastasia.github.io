@@ -4,6 +4,7 @@ title:  "devops"
 categories: projects
 slug: devops
 order: 7
+show: true
 images: ["devops.gif"]
 tags: 
     - other

@@ -4,6 +4,7 @@ title:  "old ads"
 categories: projects
 slug: old-ads
 order: 999
+show: true
 description: >-
     <p>I spent a couple years in advertising (long, long ago).</p>
     <p>Here are some failed and greenlighted projects</p>

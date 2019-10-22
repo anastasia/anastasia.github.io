@@ -5,6 +5,7 @@ name: Caselaw Access Projectttt
 categories: projects
 slug: caselaw
 order: 3
+show: true
 github: "harvard-lil/capstone"
 website: "https://case.law"
 description: >-

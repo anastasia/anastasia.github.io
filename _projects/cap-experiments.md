@@ -4,6 +4,7 @@ title:  "CAP experiments"
 categories: projects
 slug: cap-experiments
 order: 5
+show: true
 github: harvard-lil/colors
 website: "https://colors.lil.tools/"
 description: >-

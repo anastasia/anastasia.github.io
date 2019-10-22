@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="description-text">
+  {{ page.description }}
+</div>
+{% for rec in page.recordings %}
+<p><strong>{{rec.desc}}.</strong> {{rec.date}}</p>
+<audio controls>
+  <source src="/assets/sound/{{rec.src}}">
+</audio>
+<br/><br/><br/>
+{% endfor %}

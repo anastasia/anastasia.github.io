@@ -3,6 +3,7 @@ layout: project
 title:  "Alterspace"
 categories: projects
 slug: alterspace
+show: true
 order: 0
 github: "harvard-lil/alter-space"
 website: "https://lil.law.harvard.edu/projects/alterspace/"
