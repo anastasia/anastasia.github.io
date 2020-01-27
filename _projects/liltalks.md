@@ -9,13 +9,25 @@ description: >-
     <p>LILTalks are sometimes-weekly, casual conversations about things that people find interesting.</p>
     <p>These Friday talks would not exist without the enthusiasm and curiosity of my colleagues.</p>
     <hr/>
-    <p>Here is an incomplete list of past topics:</p>
+    <p>A partial list of past topics:</p>
     <ul class='liltalks'>
         <li>How flavors work</li>
         <li>Vim</li>
+        <li>Rock Climbing</li>
+        <li>Juggling</li>
         <li>Travel Giraffe</li>
+        <li>Seltzer!</li>
+        <li>The 180-Degree Rule in Film</li>
+        <li>The 1924 Democratic Convention</li>
+        <li>Synthesizer</li>
+        <li>A Small Study of Epic Proportions</li>
+        <li>Parsing Caselaw</li>
+        <li>Mardi Gras and How to Be Deposed</li>
+        <li>Black Holes</li>
+        <li>Comedy</li>
         <li>Anarchism</li>
         <li>Typography 101</li>
+        <li>Aioli from scratch</li>
         <li>Encaustic Wax Painting</li>
         <li>Generational fear in snails</li>
         <li>Hot Piles: Composting</li>
