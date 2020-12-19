@@ -1,5 +1,7 @@
 ---
 layout: default
+title: ""
+
 ---
 <div class="description-text">
     {{ page.description }}
@@ -11,13 +13,13 @@ layout: default
         <audio>
             <source src="/assets/sound/{{rec.src}}">
         </audio>
-        <span class="recording-date">{{ rec.date }}</span>
+        <div class="recording-date">{{ rec.date }}</div>
     </li>
     {% endfor %}
 </ul>
 
 <script>
-    let colors = ['pink', 'greenish', 'blue']
+    let colors = ['pink', 'greenish', 'blue', 'yellowish']
     let color;
     $.each($('.recording'), (key, rec) => {
         color = colors[Math.floor(Math.random() * Math.floor(colors.length))]
@@ -29,7 +31,9 @@ layout: default
                 $(rec).removeClass('active');
             } else {
                 $(rec).addClass('active');
+                $(audio)[0].volume = 0;
                 audio.play();
+                $(audio).animate({volume: 1}, 3000)
             }
         });
 

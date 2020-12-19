@@ -13,6 +13,7 @@ $color-red: orangered;
 $color-pink: #ead4ff;
 $color-blue-light: #deface;
 $color-greenish: #deeded;
+$color-yellowish: #effec7;
 
 $xs: 575.98px;
 $sm-min: 576px;
@@ -128,6 +129,9 @@ li > img, li > a > img {
 .sidebar {
   position: fixed;
   overflow-y: scroll;
+  //@include media-breakpoint-down(sm) {
+  //  left: -100px;
+  //}
 }
 
 .sidebar ul {
@@ -243,7 +247,7 @@ li.list-item.page > a {
 
 ul.tags-key {
   li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 0;
     color: $color-gray !important;
     font-style: italic;
@@ -322,6 +326,15 @@ ul.liltalks {
       animation: neon-greenish 1.5s ease-in-out infinite alternate;
     }
   }
+  &.yellowish {
+    background-color: $color-yellowish;
+
+    &:hover, &.active {
+      -webkit-animation: neon-yellowish 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon-yellowish 1.5s ease-in-out infinite alternate;
+      animation: neon-yellowish 1.5s ease-in-out infinite alternate;
+    }
+  }
 }
 
 .recording-date {
@@ -329,7 +342,6 @@ ul.liltalks {
   top: 70px;
   text-align: center;
   font-size: 0.8em;
-  margin-left: 13px;
 }
 
 @mixin neonmixin($color) {
@@ -377,5 +389,17 @@ ul.liltalks {
 
 @-webkit-keyframes neon-greenish {
   @include neonmixin($color-greenish)
+}
+
+@keyframes neon-yellowish {
+  @include neonmixin($color-yellowish)
+}
+
+@-moz-keyframes neon-yellowish {
+  @include neonmixin($color-yellowish)
+}
+
+@-webkit-keyframes neon-yellowish {
+  @include neonmixin($color-yellowish)
 }
 

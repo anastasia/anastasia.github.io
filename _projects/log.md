@@ -12,8 +12,11 @@ recordings: [
 {src: "sinking_bout_you.mp3", date: "June 18, 2019", desc: "Thinking 'bout you, St. Petersburg, Russia"},
 {src: "bourdeilles_snippet.mp3", date: "June 20, 2019", desc: "Lost, alone, in Bourdeilles, France"},
 {src: "never_again.mp3", date: "July 2, 2019", desc: "Boston ICE prison"},
+{src: "horsik.m4a", date: "May 8, 2020", desc: "horsik"},
+{src: "morning.m4a", date: "December 1, 2020", desc: "z"},
+{src: "lullaby.m4a", date: "December 15, 2020", desc: "z"},
 ]
 tags: ["other"]
 description: >-
-    <p>Saved snippets over the years.</p>
+    <p><img src="/assets/img/icons/volume_up-24px.svg"></p>
 ---
