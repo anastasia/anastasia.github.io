@@ -2,12 +2,36 @@
 layout: default
 ---
 <div class="description-text">
-  {{ page.description }}
+    {{ page.description }}
 </div>
-{% for rec in page.recordings %}
-<p><strong>{{rec.desc}}.</strong> {{rec.date}}</p>
-<audio controls>
-  <source src="/assets/sound/{{rec.src}}">
-</audio>
-<br/><br/><br/>
-{% endfor %}
+<ul class="list-inline">
+    {% for rec in page.recordings %}
+    <!--    <p><strong>{{rec.desc}}.</strong> {{rec.date}}</p>-->
+    <li class="recording list-inline-item" id="recording-{{forloop.index}}">
+        <audio>
+            <source src="/assets/sound/{{rec.src}}">
+        </audio>
+    </li>
+    {% endfor %}
+</ul>
+
+<script>
+    let colors = ['red', 'black', 'blue']
+    let color;
+
+    $.each($('.recording'), (key, rec) => {
+        color = colors[Math.floor(Math.random() * Math.floor(colors.length))]
+        $(rec).addClass(color);
+
+        $(rec).on('click', () => {
+            if ($(rec).hasClass('active')) {
+                $(rec).children()[0].pause();
+                $(rec).removeClass('active');
+            } else {
+                $(rec).addClass('active');
+                $(rec).children()[0].play()
+            }
+        });
+
+    })
+</script>

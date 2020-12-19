@@ -7,6 +7,7 @@ $color-black: #2f2f2f;
 $color-gray: #777;
 $color-yellow: #FFF650;
 $color-blue: #0000ff;
+$color-red: orangered;
 
 $xs: 575.98px;
 $sm-min: 576px;
@@ -249,6 +250,7 @@ ul.liltalks {
     line-height: 1.2em;
     font-size: 0.9em;
   }
+
   li:before {
     content: "- ";
   }
@@ -266,11 +268,113 @@ ul.liltalks {
   }
 
   &.red, &.code {
-    background-color: orangered;
+    background-color: $color-red;
   }
 
   &.green, &.other {
     background-color: forestgreen;
   }
+}
 
+// recordings
+.recording.list-inline-item {
+  width: 80px;
+  height: 100px;
+  margin: 0 0 0 -5px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &.blue {
+    background-color: $color-blue;
+    &:hover, &.active {
+      -webkit-animation: neon-blue 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon-blue 1.5s ease-in-out infinite alternate;
+      animation: neon-blue 1.5s ease-in-out infinite alternate;
+    }
+  }
+
+  &.red {
+    background-color: $color-red;
+    &:hover, &.active {
+      -webkit-animation: neon-red 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon-red 1.5s ease-in-out infinite alternate;
+      animation: neon-red 1.5s ease-in-out infinite alternate;
+    }
+  }
+
+  &.black {
+    background-color: $color-black;
+
+    &:hover, &.active {
+      -webkit-animation: neon-black 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon-black 1.5s ease-in-out infinite alternate;
+      animation: neon-black 1.5s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@mixin neonmixin($color) {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color, 0 0 70px $color, 0 0 80px $color, 0 0 100px $color, 0 0 150px $color;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color, 0 0 35px $color, 0 0 40px $color, 0 0 50px $color, 0 0 75px $color;
+  }
+}
+
+@keyframes neon-blue {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-blue, 0 0 70px $color-blue, 0 0 80px $color-blue, 0 0 100px $color-blue, 0 0 150px $color-blue;
+  }
+
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-blue, 0 0 35px $color-blue, 0 0 40px $color-blue, 0 0 50px $color-blue, 0 0 75px $color-blue;
+  }
+}
+
+@-moz-keyframes neon-blue {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-blue, 0 0 70px $color-blue, 0 0 80px $color-blue, 0 0 100px $color-blue, 0 0 150px $color-blue;
+  }
+
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-blue, 0 0 35px $color-blue, 0 0 40px $color-blue, 0 0 50px $color-blue, 0 0 75px $color-blue;
+  }
+}
+
+@-webkit-keyframes neon-blue {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-blue, 0 0 70px $color-blue, 0 0 80px $color-blue, 0 0 100px $color-blue, 0 0 150px $color-blue;
+  }
+
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-blue, 0 0 35px $color-blue, 0 0 40px $color-blue, 0 0 50px $color-blue, 0 0 75px $color-blue;
+  }
+
+}
+
+@keyframes neon-red {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-red, 0 0 70px $color-red, 0 0 80px $color-red, 0 0 100px $color-red, 0 0 150px $color-red;
+  }
+
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-red, 0 0 35px $color-red, 0 0 40px $color-red, 0 0 50px $color-red, 0 0 75px $color-red;
+  }
+}
+
+@keyframes neon-black {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-black, 0 0 70px $color-black, 0 0 80px $color-black, 0 0 100px $color-black, 0 0 150px $color-black;
+  }
+
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-black, 0 0 35px $color-black, 0 0 40px $color-black, 0 0 50px $color-black, 0 0 75px $color-black;
+  }
+}
+
+@mixin neonanimation($color) {
 }
