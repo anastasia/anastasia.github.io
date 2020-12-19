@@ -16,7 +16,12 @@ recordings: [
 {src: "france-jardin.m4a", date: "June 26, 2019", desc: "Jardin in the summer"},
 {src: "never_again.mp3", date: "July 2, 2019", desc: "Boston ICE prison"},
 {src: "zitomer-customer.m4a", date: "August 20, 2019", desc: ""},
+{src: "breakheart-reservation.m4a", date: "March 21, 2020", desc: "Last time out out, breathing heavy because pregnant"},
+{src: "violin-at-the-hospital.m4a", date: "May 7, 2020", desc: "Violin at the hospital during COVID"},
 {src: "horsik.m4a", date: "May 8, 2020", desc: "horsik"},
+{src: "epidural-on-empty.m4a", date: "May 20, 2020", desc: "epidural on empty"},
+{src: "IV.m4a", date: "May 22, 2020", desc: "IV"},
+{src: "aya-hiccups.m4a", date: "June 12, 2020", desc: "Aya aya aya & hiccups"},
 {src: "morning.m4a", date: "December 1, 2020", desc: "z"},
 {src: "lullaby.m4a", date: "December 15, 2020", desc: "z"},
 ]

@@ -10,7 +10,8 @@ $color-blue: #0000ff;
 $color-red: orangered;
 
 /* pastels */
-$color-pink: #ead4ff;
+$color-pink: #f2e1ff;
+$color-purplish: #d4dfff;
 $color-blue-light: #deface;
 $color-greenish: #deeded;
 $color-yellowish: #effec7;
@@ -335,6 +336,15 @@ ul.liltalks {
       animation: neon-yellowish 1.5s ease-in-out infinite alternate;
     }
   }
+  &.purplish {
+    background-color: $color-purplish;
+
+    &:hover, &.active {
+      -webkit-animation: neon-purplish 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon-purplish 1.5s ease-in-out infinite alternate;
+      animation: neon-purplish 1.5s ease-in-out infinite alternate;
+    }
+  }
 }
 
 .recording-date {
@@ -401,5 +411,17 @@ ul.liltalks {
 
 @-webkit-keyframes neon-yellowish {
   @include neonmixin($color-yellowish)
+}
+
+@keyframes neon-purplish {
+  @include neonmixin($color-purplish)
+}
+
+@-moz-keyframes neon-purplish {
+  @include neonmixin($color-purplish)
+}
+
+@-webkit-keyframes neon-purplish {
+  @include neonmixin($color-purplish)
 }
 
