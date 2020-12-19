@@ -295,6 +295,7 @@ ul.liltalks {
 
   &.blue {
     background-color: $color-blue-light;
+
     &:hover, &.active {
       -webkit-animation: neon-blue 1.5s ease-in-out infinite alternate;
       -moz-animation: neon-blue 1.5s ease-in-out infinite alternate;
@@ -304,6 +305,7 @@ ul.liltalks {
 
   &.pink {
     background-color: $color-pink;
+
     &:hover, &.active {
       -webkit-animation: neon-pink 1.5s ease-in-out infinite alternate;
       -moz-animation: neon-pink 1.5s ease-in-out infinite alternate;
@@ -320,6 +322,14 @@ ul.liltalks {
       animation: neon-greenish 1.5s ease-in-out infinite alternate;
     }
   }
+}
+
+.recording-date {
+  position: relative;
+  top: 70px;
+  text-align: center;
+  font-size: 0.8em;
+  margin-left: 13px;
 }
 
 @mixin neonmixin($color) {
