@@ -16,20 +16,19 @@ layout: default
 </ul>
 
 <script>
-    let colors = ['red', 'black', 'blue']
+    let colors = ['pink', 'greenish', 'blue']
     let color;
-
     $.each($('.recording'), (key, rec) => {
         color = colors[Math.floor(Math.random() * Math.floor(colors.length))]
         $(rec).addClass(color);
-
         $(rec).on('click', () => {
+            let audio = $(rec).children()[0];
             if ($(rec).hasClass('active')) {
-                $(rec).children()[0].pause();
+                audio.pause();
                 $(rec).removeClass('active');
             } else {
                 $(rec).addClass('active');
-                $(rec).children()[0].play()
+                audio.play();
             }
         });
 

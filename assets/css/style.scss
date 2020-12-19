@@ -9,6 +9,11 @@ $color-yellow: #FFF650;
 $color-blue: #0000ff;
 $color-red: orangered;
 
+/* pastels */
+$color-pink: #ead4ff;
+$color-blue-light: #deface;
+$color-greenish: #deeded;
+
 $xs: 575.98px;
 $sm-min: 576px;
 $sm-max: 767.98px;
@@ -276,11 +281,12 @@ ul.liltalks {
   }
 }
 
+
 // recordings
 .recording.list-inline-item {
-  width: 80px;
+  width: 100px;
   height: 100px;
-  margin: 0 0 0 -5px;
+  margin: 2px;
   cursor: pointer;
   text-decoration: none;
   -webkit-transition: all 0.5s;
@@ -288,7 +294,7 @@ ul.liltalks {
   transition: all 0.5s;
 
   &.blue {
-    background-color: $color-blue;
+    background-color: $color-blue-light;
     &:hover, &.active {
       -webkit-animation: neon-blue 1.5s ease-in-out infinite alternate;
       -moz-animation: neon-blue 1.5s ease-in-out infinite alternate;
@@ -296,85 +302,70 @@ ul.liltalks {
     }
   }
 
-  &.red {
-    background-color: $color-red;
+  &.pink {
+    background-color: $color-pink;
     &:hover, &.active {
-      -webkit-animation: neon-red 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-red 1.5s ease-in-out infinite alternate;
-      animation: neon-red 1.5s ease-in-out infinite alternate;
+      -webkit-animation: neon-pink 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon-pink 1.5s ease-in-out infinite alternate;
+      animation: neon-pink 1.5s ease-in-out infinite alternate;
     }
   }
 
-  &.black {
-    background-color: $color-black;
+  &.greenish {
+    background-color: $color-greenish;
 
     &:hover, &.active {
-      -webkit-animation: neon-black 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-black 1.5s ease-in-out infinite alternate;
-      animation: neon-black 1.5s ease-in-out infinite alternate;
+      -webkit-animation: neon-greenish 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon-greenish 1.5s ease-in-out infinite alternate;
+      animation: neon-greenish 1.5s ease-in-out infinite alternate;
     }
   }
 }
 
 @mixin neonmixin($color) {
   from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color, 0 0 70px $color, 0 0 80px $color, 0 0 100px $color, 0 0 150px $color;
+    box-shadow: 0 0 0px $color, 0 0 20px $color, 0 0 40px $color, 0 0 5px $color, 0 0 150px $color
+    //box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color, 0 0 70px $color, 0 0 80px $color, 0 0 100px $color, 0 0 150px $color;
   }
   to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color, 0 0 35px $color, 0 0 40px $color, 0 0 50px $color, 0 0 75px $color;
+    //box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color, 0 0 35px $color, 0 0 40px $color, 0 0 50px $color, 0 0 75px $color;
+    box-shadow: 0 0 5px #fff, 0 0 20px $color, 0 0 35px $color, 0 0 40px $color, 0 0 50px $color, 0 0 75px $color;
   }
 }
 
 @keyframes neon-blue {
-  from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-blue, 0 0 70px $color-blue, 0 0 80px $color-blue, 0 0 100px $color-blue, 0 0 150px $color-blue;
-  }
-
-  to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-blue, 0 0 35px $color-blue, 0 0 40px $color-blue, 0 0 50px $color-blue, 0 0 75px $color-blue;
-  }
+  @include neonmixin($color-blue-light)
 }
 
 @-moz-keyframes neon-blue {
-  from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-blue, 0 0 70px $color-blue, 0 0 80px $color-blue, 0 0 100px $color-blue, 0 0 150px $color-blue;
-  }
-
-  to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-blue, 0 0 35px $color-blue, 0 0 40px $color-blue, 0 0 50px $color-blue, 0 0 75px $color-blue;
-  }
+  @include neonmixin($color-blue-light)
 }
 
 @-webkit-keyframes neon-blue {
-  from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-blue, 0 0 70px $color-blue, 0 0 80px $color-blue, 0 0 100px $color-blue, 0 0 150px $color-blue;
-  }
-
-  to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-blue, 0 0 35px $color-blue, 0 0 40px $color-blue, 0 0 50px $color-blue, 0 0 75px $color-blue;
-  }
-
+  @include neonmixin($color-blue-light)
 }
 
-@keyframes neon-red {
-  from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-red, 0 0 70px $color-red, 0 0 80px $color-red, 0 0 100px $color-red, 0 0 150px $color-red;
-  }
-
-  to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-red, 0 0 35px $color-red, 0 0 40px $color-red, 0 0 50px $color-red, 0 0 75px $color-red;
-  }
+@keyframes neon-pink {
+  @include neonmixin($color-pink)
 }
 
-@keyframes neon-black {
-  from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color-black, 0 0 70px $color-black, 0 0 80px $color-black, 0 0 100px $color-black, 0 0 150px $color-black;
-  }
-
-  to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color-black, 0 0 35px $color-black, 0 0 40px $color-black, 0 0 50px $color-black, 0 0 75px $color-black;
-  }
+@-moz-keyframes neon-pink {
+  @include neonmixin($color-pink)
 }
 
-@mixin neonanimation($color) {
+@-webkit-keyframes neon-pink {
+  @include neonmixin($color-pink)
 }
+
+@keyframes neon-greenish {
+  @include neonmixin($color-greenish)
+}
+
+@-moz-keyframes neon-greenish {
+  @include neonmixin($color-greenish)
+}
+
+@-webkit-keyframes neon-greenish {
+  @include neonmixin($color-greenish)
+}
+
