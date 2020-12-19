@@ -30,4 +30,6 @@ gem "jekyll-assets", {
   group: :jekyll_plugins
 }
 
-gem "nokogiri", ">= 1.10.4"
+gem "nokogiri", ">= 1.10.8"
+
+gem "sprockets", "~> 3.7"
