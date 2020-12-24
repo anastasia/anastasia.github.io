@@ -90,12 +90,13 @@ li > img, li > a > img {
     margin-top: 0;
     display: none;
     top: 0;
-    box-shadow: 5px 0 20px #cecece;
+    box-shadow: 1px 0 10px #e6e4e4;
+
     &.active {
       margin-left: 0;
       display: block;
       z-index: 999;
-      border-right: 1px solid gray;
+      border-right: 1px solid #d7d7d7;
     }
   }
 
@@ -106,6 +107,7 @@ li > img, li > a > img {
 
 .main-content {
   min-height: 100vh;
+  padding: 1em;
   @include media-breakpoint-up(md) {
     width: calc(100% - 250px);
     transition: all 0.3s;
