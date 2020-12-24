@@ -3,3 +3,6 @@ _site
 .jekyll-metadata
 .idea
 extra
+vendor
+*.nix
+.bundle

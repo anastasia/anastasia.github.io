@@ -77,6 +77,8 @@ li > img, li > a > img {
 #sidebar {
   overflow-y: scroll;
   padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   transition: all 0.3s;
   display: inline;
   background-color: white;
