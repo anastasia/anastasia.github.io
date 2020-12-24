@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Caselaw Access Project
-name: Caselaw Access Projectttt
+name: Caselaw Access Project
 categories: projects
 slug: caselaw
 order: 3
