@@ -2,11 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-@import "bootstrap/_functions";
-@import "bootstrap/_variables";
-@import "bootstrap/_utilities";
-@import "bootstrap/mixins";
-@import "bootstrap/_grid";
+@import "bootstrap/scss/bootstrap";
 
 @import "fonts";
 @import "recordings";
