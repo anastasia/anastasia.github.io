@@ -44,7 +44,7 @@ body {
 
 li {
   list-style: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -119,6 +119,7 @@ li > img, li > a > img {
 
   .image-description {
     font-size: 1.2em;
+    width: 100%;
   }
 }
 
@@ -152,6 +153,12 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
+}
+
+.project-list {
+  li {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .description-text {
