@@ -74,14 +74,13 @@ li > img, li > a > img {
 
 #exit-menu {
   z-index: 999;
-  position: absolute;
   right: 0;
   top: 0;
 }
 
 #sidebar {
   overflow-y: scroll;
-  padding-top: 2em;
+  padding-top: 1em;
   transition: all 0.3s;
   display: inline;
   background-color: white;
@@ -123,6 +122,10 @@ li > img, li > a > img {
   }
 }
 
+.header {
+  padding-top: 2em;
+}
+
 header li {
   border-right: 0;
 }
@@ -133,8 +136,13 @@ img {
 
 .site-description {
   color: $color-gray;
-  @include media-breakpoint-down(md) {
-    displaymenu: none;
+}
+
+#sidebar {
+  .site-description {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 }
 
