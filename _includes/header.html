@@ -1,16 +1,19 @@
-<div class="header"><a href="{{ site.github.url }}">
-  <h1>{{ site.title | default: site.github.repository_name }}</h1>
-</a>
-  <p class="site-description">
-    {{ site.description | default: site.github.project_tagline }}
-  </p>
-  <ul>
-    {% for page in site.pages %}
-    {% if page.permalink %}
-    <li class="list-item page">
-      [ <a href="{{ page.permalink }}"> {{ page.title }} </a> ]
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+<div class="header">
+    <a class="d-md-none" href="{{ site.github.url }}">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+    </a>
+    <a href="#" class="d-sm-inline d-md-none" id="menu">menu</a>
+    <p class="d-md-none site-description">
+        {{ site.description | default: site.github.project_tagline }}
+    </p>
+    <p class="d-md-none">---</p>
+    <!--<ul>
+        {% for page in site.pages %}
+        {% if page.permalink %}
+        <li class="list-item page">
+            [ <a href="{{ page.permalink }}"> {{ page.title }} </a> ]
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>-->
 </div>

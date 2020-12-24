@@ -10,6 +10,8 @@
             crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="{{ '/assets/js/bootstrap.js' }}"></script>
+    <!-- custom -->
+    <script src="{{ '/assets/js/menu.js' }}"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -25,12 +27,16 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-3 sidebar">
+        <div class="col-12">
             {% include header.html %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="" id="sidebar">
             {% include nav.html %}
             {% include key.html %}
         </div>
-        <main class="col-sm-9 col-lg-7 main-content">
+        <main class="main-content">
             <div class="project-title">{{ page.title }}</div>
             <div class="description-text">
 
@@ -56,7 +62,7 @@
                              alt="{% if image.desc %}{{ image.desc }}{% endif %}">
                         {% if image.desc %}
                         <div class="carousel-caption d-none d-md-block">
-                            <p class="image-description float-right">{{ image.desc }}</p>
+                            <p class="image-description">{{ image.desc }}</p>
                         </div>
                         {% endif %}
                     </div>
@@ -100,9 +106,9 @@
                     <a target="_blank" href="/assets/img/{{image.image}}">
                         <img src="/assets/img/{{image.image}}"/>
                     </a>
-                    <span class="image-description float-right">{{ image.desc }}</span>
                     <br/><br/>
                 </li>
+                <label class="image-description">{{ image.desc }}</label>
             </ul>
             {% endfor %}
 
@@ -115,7 +121,7 @@
                         <img class="d-block w-100" src="/assets/img/{{image.image}}" alt="{{ image.desc }}">
                         {% if image.desc %}
                         <div class="carousel-caption d-none d-md-block">
-                            <p class="float-right">{{ image.desc }}</p>
+                            <p>{{ image.desc }}</p>
                         </div>
                         {% endif %}
                     </div>

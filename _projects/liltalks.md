@@ -47,12 +47,9 @@ description: >-
         <li>José de Acosta</li>       
         <li>How to Throw an Elegant Stress-Free Dinner Party</li>
     </ul>
-    <p>A post in our group's #ideas channel — how it all started:</p>
+    
     
  
 tags: ["other"]
 
-images_desc: [
-    {image: "liltalks/beginning.png", desc: ""},
-]
 ---

@@ -10,6 +10,8 @@
             crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="{{ '/assets/js/bootstrap.js' }}"></script>
+    <!-- custom -->
+    <script src="{{ '/assets/js/menu.js' }}"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -25,12 +27,16 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-3 sidebar">
+        <div class="col-12">
             {% include header.html %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="" id="sidebar">
             {% include nav.html %}
             {% include key.html %}
         </div>
-        <main class="col-sm-9 col-lg-7 main-content">
+        <main class="main-content">
             {{ content }}
         </main>
     </div>

@@ -7,7 +7,7 @@ order: 999
 show: true
 description: >-
     <p>I spent a couple years in advertising (long, long ago).</p>
-    <p>Here are some failed and greenlighted projects</p>
+    <p>Here are some failed and greenlit projects</p>
 images_desc: [{image: "think-hands-1.jpg", desc: These are part of early idea explorations for advertising the Portland Children's Museum}, {image: "think-hands-2.jpg", desc: ""}]
 carousel_0: [
     {image: "wk/wordstock-wwchair.jpg", desc: "Wordstock ad in the newspaper"},

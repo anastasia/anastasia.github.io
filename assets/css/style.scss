@@ -2,19 +2,20 @@
 ---
 
 @import "{{ site.theme }}";
+@import "bootstrap/_functions";
+@import "bootstrap/_variables";
+@import "bootstrap/_utilities";
+@import "bootstrap/mixins";
+@import "bootstrap/_grid";
+
+@import "fonts";
+@import "recordings";
 
 $color-black: #2f2f2f;
 $color-gray: #777;
 $color-yellow: #FFF650;
 $color-blue: #0000ff;
 $color-red: orangered;
-
-/* pastels */
-$color-pink: #f2e1ff;
-$color-purplish: #d4dfff;
-$color-blue-light: #deface;
-$color-greenish: #deeded;
-$color-yellowish: #effec7;
 
 $xs: 575.98px;
 $sm-min: 576px;
@@ -24,70 +25,6 @@ $md-max: 991.98px;
 $lg-min: 992px;
 $lg-max: 1199.98px;
 $xl: 1200px;
-
-@font-face {
-  font-family: 'hk_grotesk';
-  src: url('/assets/font/hkgrotesk-bolditalic-webfont.woff2') format('woff2'),
-  url('/assets/font/hkgrotesk-bolditalic-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'hk_grotesk';
-  src: url('/assets/font/hkgrotesk-italic-webfont.woff2') format('woff2'),
-  url('/assets/font/hkgrotesk-italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'hk_grotesk';
-  src: url('/assets/font/hkgrotesk-lightitalic-webfont.woff2') format('woff2'),
-  url('/assets/font/hkgrotesk-lightitalic-webfont.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'hk_grotesk';
-  src: url('/assets/font/hkgrotesk-mediumitalic-webfont.woff2') format('woff2'),
-  url('/assets/font/hkgrotesk-mediumitalic-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'hk_grotesk';
-  src: url('/assets/font/hkgrotesk-semibolditalic-webfont.woff2') format('woff2'),
-  url('/assets/font/hkgrotesk-semibolditalic-webfont.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'hk_grotesk';
-  src: url('/assets/font/hkgrotesk-bold-webfont.woff2') format('woff2'),
-  url('/assets/font/hkgrotesk-bold-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'hk_grotesk';
-  src: url('/assets/font/hkgrotesk-light-webfont.woff2') format('woff2'),
-  url('/assets/font/hkgrotesk-light-webfont.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'hk_grotesk';
-  src: url('/assets/font/hkgrotesk-medium-webfont.woff2') format('woff2'),
-  url('/assets/font/hkgrotesk-medium-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
 
 ::selection {
   background: $color-yellow; /* WebKit/Blink Browsers */
@@ -99,10 +36,14 @@ $xl: 1200px;
   color: $color-black;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "hk_grotesk", sans-serif;
   color: $color-black;
-  //font-size: 1.25em;
+  padding: 0;
 }
 
 li {
@@ -115,7 +56,7 @@ a {
     font-weight: normal;
     color: $color-blue;
     text-decoration: none;
-    padding-bottom: 3px;
+    //padding-bottom: 3px;
   }
 }
 
@@ -127,58 +68,54 @@ li > img, li > a > img {
   margin-bottom: 0;
 }
 
-.sidebar {
-  position: fixed;
-  overflow-y: scroll;
-  //@include media-breakpoint-down(sm) {
-  //  left: -100px;
-  //}
+#menu {
+  transition: all 0.3s;
 }
 
-.sidebar ul {
-  padding: 0;
-  background: transparent;
-  display: grid;
-  border: 0;
+#exit-menu {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-  > li {
-    display: block;
-    color: $color-black;
-
-    a {
-      text-align: left;
-      padding: 0;
-      color: $color-black;
-
-      &:hover, &:active, &:focus {
-        border-bottom: 1px solid $color-blue;
-      }
+#sidebar {
+  overflow-y: scroll;
+  padding-top: 2em;
+  transition: all 0.3s;
+  display: inline;
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  @include media-breakpoint-down(md) {
+    margin-left: -250px;
+    margin-top: 0;
+    display: none;
+    top: 0;
+    box-shadow: 5px 0 20px #cecece;
+    &.active {
+      margin-left: 0;
+      display: block;
+      z-index: 999;
+      border-right: 1px solid gray;
     }
+  }
 
-    a:hover {
-      font-style: normal;
-      color: $color-blue;
-      text-decoration: none;
-    }
-
-    a:focus {
-      font-weight: normal;
-      background-color: $color-yellow;
-    }
+  &.active {
+    transition: all 0.3s;
   }
 }
 
 .main-content {
-  width: auto;
-  margin-left: 300px;
-  @media (max-width: $xs) {
-    margin-left: 165px;
-  }
-  @media (min-width: $sm-min) and (max-width: $sm-max) {
-    margin-left: 200px;
-  }
-  @media (min-width: $md-min) and (max-width: $md-max) {
-    margin-left: 220px;
+  min-height: 100vh;
+  @include media-breakpoint-up(md) {
+    width: calc(100% - 250px);
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 2em;
   }
 
   .image-description {
@@ -196,8 +133,8 @@ img {
 
 .site-description {
   color: $color-gray;
-  @media (max-width: $md-max) {
-    display: none;
+  @include media-breakpoint-down(md) {
+    displaymenu: none;
   }
 }
 
@@ -284,144 +221,5 @@ ul.liltalks {
   &.green, &.other {
     background-color: forestgreen;
   }
-}
-
-
-// recordings
-.recording.list-inline-item {
-  width: 100px;
-  height: 100px;
-  margin: 2px;
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-
-  &.blue {
-    background-color: $color-blue-light;
-
-    &:hover, &.active {
-      -webkit-animation: neon-blue 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-blue 1.5s ease-in-out infinite alternate;
-      animation: neon-blue 1.5s ease-in-out infinite alternate;
-    }
-  }
-
-  &.pink {
-    background-color: $color-pink;
-
-    &:hover, &.active {
-      -webkit-animation: neon-pink 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-pink 1.5s ease-in-out infinite alternate;
-      animation: neon-pink 1.5s ease-in-out infinite alternate;
-    }
-  }
-
-  &.greenish {
-    background-color: $color-greenish;
-
-    &:hover, &.active {
-      -webkit-animation: neon-greenish 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-greenish 1.5s ease-in-out infinite alternate;
-      animation: neon-greenish 1.5s ease-in-out infinite alternate;
-    }
-  }
-  &.yellowish {
-    background-color: $color-yellowish;
-
-    &:hover, &.active {
-      -webkit-animation: neon-yellowish 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-yellowish 1.5s ease-in-out infinite alternate;
-      animation: neon-yellowish 1.5s ease-in-out infinite alternate;
-    }
-  }
-  &.purplish {
-    background-color: $color-purplish;
-
-    &:hover, &.active {
-      -webkit-animation: neon-purplish 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-purplish 1.5s ease-in-out infinite alternate;
-      animation: neon-purplish 1.5s ease-in-out infinite alternate;
-    }
-  }
-}
-
-.recording-date {
-  position: relative;
-  top: 70px;
-  text-align: center;
-  font-size: 0.8em;
-}
-
-@mixin neonmixin($color) {
-  from {
-    box-shadow: 0 0 0px $color, 0 0 20px $color, 0 0 40px $color, 0 0 5px $color, 0 0 150px $color
-    //box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $color, 0 0 70px $color, 0 0 80px $color, 0 0 100px $color, 0 0 150px $color;
-  }
-  to {
-    //box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $color, 0 0 35px $color, 0 0 40px $color, 0 0 50px $color, 0 0 75px $color;
-    box-shadow: 0 0 5px #fff, 0 0 20px $color, 0 0 35px $color, 0 0 40px $color, 0 0 50px $color, 0 0 75px $color;
-  }
-}
-
-@keyframes neon-blue {
-  @include neonmixin($color-blue-light)
-}
-
-@-moz-keyframes neon-blue {
-  @include neonmixin($color-blue-light)
-}
-
-@-webkit-keyframes neon-blue {
-  @include neonmixin($color-blue-light)
-}
-
-@keyframes neon-pink {
-  @include neonmixin($color-pink)
-}
-
-@-moz-keyframes neon-pink {
-  @include neonmixin($color-pink)
-}
-
-@-webkit-keyframes neon-pink {
-  @include neonmixin($color-pink)
-}
-
-@keyframes neon-greenish {
-  @include neonmixin($color-greenish)
-}
-
-@-moz-keyframes neon-greenish {
-  @include neonmixin($color-greenish)
-}
-
-@-webkit-keyframes neon-greenish {
-  @include neonmixin($color-greenish)
-}
-
-@keyframes neon-yellowish {
-  @include neonmixin($color-yellowish)
-}
-
-@-moz-keyframes neon-yellowish {
-  @include neonmixin($color-yellowish)
-}
-
-@-webkit-keyframes neon-yellowish {
-  @include neonmixin($color-yellowish)
-}
-
-@keyframes neon-purplish {
-  @include neonmixin($color-purplish)
-}
-
-@-moz-keyframes neon-purplish {
-  @include neonmixin($color-purplish)
-}
-
-@-webkit-keyframes neon-purplish {
-  @include neonmixin($color-purplish)
 }
 
