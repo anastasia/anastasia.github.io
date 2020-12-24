@@ -20,6 +20,7 @@ $color-yellowish: #effec7;
     background-color: $color-blue-light;
 
     &:hover, &.active {
+      background-color: white;
       -webkit-animation: neon-blue 1.5s ease-in-out infinite alternate;
       -moz-animation: neon-blue 1.5s ease-in-out infinite alternate;
       animation: neon-blue 1.5s ease-in-out infinite alternate;
@@ -30,6 +31,7 @@ $color-yellowish: #effec7;
     background-color: $color-pink;
 
     &:hover, &.active {
+      background-color: white;
       -webkit-animation: neon-pink 1.5s ease-in-out infinite alternate;
       -moz-animation: neon-pink 1.5s ease-in-out infinite alternate;
       animation: neon-pink 1.5s ease-in-out infinite alternate;
@@ -40,6 +42,7 @@ $color-yellowish: #effec7;
     background-color: $color-greenish;
 
     &:hover, &.active {
+      background-color: white;
       -webkit-animation: neon-greenish 1.5s ease-in-out infinite alternate;
       -moz-animation: neon-greenish 1.5s ease-in-out infinite alternate;
       animation: neon-greenish 1.5s ease-in-out infinite alternate;
@@ -50,6 +53,7 @@ $color-yellowish: #effec7;
     background-color: $color-yellowish;
 
     &:hover, &.active {
+      background-color: white;
       -webkit-animation: neon-yellowish 1.5s ease-in-out infinite alternate;
       -moz-animation: neon-yellowish 1.5s ease-in-out infinite alternate;
       animation: neon-yellowish 1.5s ease-in-out infinite alternate;
@@ -60,6 +64,7 @@ $color-yellowish: #effec7;
     background-color: $color-purplish;
 
     &:hover, &.active {
+      background-color: white;
       -webkit-animation: neon-purplish 1.5s ease-in-out infinite alternate;
       -moz-animation: neon-purplish 1.5s ease-in-out infinite alternate;
       animation: neon-purplish 1.5s ease-in-out infinite alternate;
