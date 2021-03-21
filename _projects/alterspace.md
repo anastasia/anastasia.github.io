@@ -21,9 +21,9 @@ images_desc: [
     {image: "alterspace/SCHOENBAUM_1B_PHOTO1.jpg", desc: "Cambridge Public Library. Credit: Hannah Schoenbaum"},
     {image: "alterspace/langdell.jpg", desc: "Langdell Library"},
     {image: "alterspace/SCHOENBAUM_1B_PHOTO3.jpg", desc: "Cambridge Public Library. Credit: Hannah Schoenbaum"},
-    {image: "alterspace/alterspace.gif"},
     {image: "alterspace/ipads.png", desc: "App code + design"},
     {image: "alterspace/poster-hanging.png", desc: "Poster design"},
+    {image: "alterspace/alterspace.gif"},
 ]
     
 
