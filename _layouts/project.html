@@ -104,7 +104,7 @@
                 {% for image in page.images_desc %}
                 <li>
                     <a target="_blank" href="/assets/img/{{image.image}}">
-                        <img src="/assets/img/{{image.image}}"/>
+                        <img src="/assets/img/{{image.image}}" class="{{image.img_class}}"/>
                     </a>
                     <label class="image-description">{{ image.desc }}</label>
                 </li>
