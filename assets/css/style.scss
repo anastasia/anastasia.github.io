@@ -134,6 +134,9 @@ header li {
 img {
   margin-bottom: 20px;
   max-width: 850px;
+  &.bus_ad {
+    border: 1px solid $color-gray;
+  }
 }
 
 .site-description {
