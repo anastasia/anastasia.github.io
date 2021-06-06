@@ -4,7 +4,7 @@ title:  "LILTalks"
 categories: projects
 slug: liltalks
 order: 5
-show: true
+show: false
 description: >-
     <p>LILTalks are sometimes-weekly, casual conversations about things that people find interesting.</p>
     <p>These Friday talks would not exist without the enthusiasm and curiosity of my colleagues.</p>
