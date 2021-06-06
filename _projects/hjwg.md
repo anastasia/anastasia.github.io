@@ -1,6 +1,5 @@
 ---
-layout: page
-type: project
+layout: project
 title:  "HJWG"
 categories: projects
 slug: hjwg
