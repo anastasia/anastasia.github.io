@@ -4,7 +4,7 @@ type: project
 title:  "HJWG"
 categories: projects
 slug: hjwg
-show: true
+show: false
 website: ""
 description: >-
         <p>Know Your Renters Rights bus ad campaign</p>
