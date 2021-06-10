@@ -11,5 +11,5 @@ description: >-
     <p>Photos by <a href="https://www.instagram.com/andygoddamnedsilva/">Andy Silva</a>.</p>
 images: ["recollected/recollected-1.png", "recollected/recollected-2.png"]
 tags: 
-    - other
+    - pm
 ---

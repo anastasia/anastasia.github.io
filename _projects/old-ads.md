@@ -19,7 +19,7 @@ media: [
 ]
 tags:
     - design
-    - other
+    - ads
 ---
 
 

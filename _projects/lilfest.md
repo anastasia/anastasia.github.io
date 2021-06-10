@@ -8,7 +8,7 @@ show: true
 description: >-
     <p>Art direction and design to make a work retreat a little more special, created using found office supplies.</p>
     <p>This is a collaboration with LIL's <a href="https://twitter.com/clare__stanton">Clare Stanton</a>.</p>
-tags: ["design"]
+tags: ["design", "pm"]
 
 media: [
     {image: "lilfest/notebooks.jpg", desc: "Notebooks for attendees made out of office supplies"},

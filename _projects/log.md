@@ -25,7 +25,7 @@ recordings: [
 {src: "morning.m4a", date: "Dec 1, '20", desc: "z"},
 {src: "lullaby.m4a", date: "Dec 15, '20", desc: "z"},
 ]
-tags: ["other"]
+
 description: >-
     <p><img src="/assets/img/icons/volume_up-24px.svg"></p>
 ---

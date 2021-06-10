@@ -10,7 +10,8 @@
 $color-black: #2f2f2f;
 $color-gray: #777;
 $color-yellow: #FFF650;
-$color-blue: #0000ff;
+$color-blue: #2929fa;
+$color-light-blue: #007bff;
 $color-red: orangered;
 
 $xs: 575.98px;
@@ -48,10 +49,13 @@ li {
 }
 
 a {
+  color: $color-blue;
   &:hover, &:focus, &:active {
-    font-weight: normal;
     color: $color-blue;
-    text-decoration: none;
+    font-weight: 700;
+    text-decoration: underline;
+    font-style: italic;
+
     //padding-bottom: 3px;
   }
 }
@@ -234,15 +238,21 @@ ul.liltalks {
   margin-right: 3px;
 
   &.blue, &.design {
-    background-color: $color-blue;
+    background-color: $color-light-blue;
   }
 
   &.red, &.code {
     background-color: $color-red;
   }
 
-  &.green, &.other {
+  &.green, &.hardware {
     background-color: forestgreen;
+  }
+  &.black, &.pm {
+    background-color: black;
+  }
+  &.black, &.ads {
+    background-color: #c800ff;
   }
 }
 

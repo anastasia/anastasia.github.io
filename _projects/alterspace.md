@@ -30,7 +30,8 @@ media: [
     
 
 tags: 
-    - design
+    - hardware
     - code
-    - other
+    - design
+    - ads
 ---
