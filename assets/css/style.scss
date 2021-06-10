@@ -85,7 +85,7 @@ li > img, li > a > img {
   position: fixed;
   height: 100vh;
   width: 250px;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     margin-left: -250px;
     margin-top: 0;
     display: none;

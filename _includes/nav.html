@@ -1,36 +1,32 @@
 <ul>
-<!--    <a class="d-sm-none d-md-inline" href="{{ site.github.url }}">-->
-<!--        <h1>{{ site.title | default: site.github.repository_name }}</h1>-->
-<!--    </a>-->
-    <div class="d-sm-inline d-md-none">
-<!--        <a href="#" class="float-right" id="exit-menu"><img src="/assets/img/icons/close-24px.svg"></a>-->
-        <a href="#" class="float-right h5" id="exit-menu">>></a>
-    </div>
-    <p class="d-xs-none d-sm-none d-md-inline site-description">
-        {{ site.description | <def></def>ault: site.github.project_tagline }}
-    </p>
-    <br/>
-    <p class="d-sm-none d-md-inline">---</p>
-    {% for page in site.pages %}
-    {% if page.permalink %}
-    <li class="list-item page">
-        [ <a href="{{ page.permalink }}"> {{ page.title }} </a> ]
-    </li>
-    {% endif %}
+  <li>
+    <a href="#" class="d-sm-inline d-md-none float-right h5"
+       id="exit-menu" style="color: blue;">&#8811;</a>
+    <span class="d-xs-none d-sm-none d-md-inline site-description">
+        {{ site.description | default: site.github.project_tagline }}
+    </span>
+  </li>
+  <br/>
+  {% for page in site.pages %}
+  {% if page.permalink %}
+  <li class="list-item page">
+    [ <a href="{{ page.permalink }}"> {{ page.title }} </a> ]
+  </li>
+  {% endif %}
+  {% endfor %}
+  {% assign tags = site.tags %}
+  {% assign sorted_projects = site.projects | sort:"order" %}
+  {% for project in sorted_projects %}
+  {% if project.show %}
+  <li class="list-item project">
+    <a class="" href="/projects/{{ project.slug }}">
+      {{ project.slug }}
+    </a>
+    {% for tag in project.tags %}
+    <span class="pixel {{ tag }}" title="{{tag}}"></span>
     {% endfor %}
-    {% assign tags = site.tags %}
-    {% assign sorted_projects = site.projects | sort:"order" %}
-    {% for project in sorted_projects %}
-    {% if project.show %}
-    <li class="list-item project">
-        <a class="" href="/projects/{{ project.slug }}">
-            {{ project.slug }}
-        </a>
-        {% for tag in project.tags %}
-        <span class="pixel {{ tag }}" title="{{tag}}"></span>
-        {% endfor %}
 
-    </li>
-    {% endif %}
-    {% endfor %}
+  </li>
+  {% endif %}
+  {% endfor %}
 </ul>
