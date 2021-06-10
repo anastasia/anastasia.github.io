@@ -8,7 +8,7 @@ show: true
 description: >-
     <p>I spent a couple years in advertising (long, long ago).</p>
     <p>Here are some failed and greenlit projects</p>
-images_desc: [
+media: [
     {image: "wk/wordstock-outside.jpg", desc: "Outside of Powell's Books in Portland Oregon"},
     {image: "wk/wordstock-wwchair.jpg", desc: "Wordstock ad in the newspaper"},
     {image: "wk/wordstock-sitting.jpg", desc: "Inside of Powell's Books in Portland Oregon"},

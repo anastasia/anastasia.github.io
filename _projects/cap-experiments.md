@@ -15,7 +15,7 @@ tags:
     - code
     - design
 images: []
-images_desc: [
+media: [
     {image: "cap-experiments/colors.png", desc: "What is the color of case law?",  link: "https://colors.lil.tools/"},
     {image: "cap-experiments/witch.png", desc: "All instances of the word 'witch'", link: "https://case.law/exhibits/witchcraft"},
 ]

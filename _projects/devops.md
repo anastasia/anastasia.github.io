@@ -5,7 +5,7 @@ categories: projects
 slug: devops
 order: 7
 show: true
-images: ["devops.gif"]
+images: ["devops.gif", "devops/posters.png"]
 tags: 
     - other
 description: >-

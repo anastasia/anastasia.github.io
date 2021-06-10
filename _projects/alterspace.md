@@ -15,7 +15,7 @@ description: >-
         <p>Sound artist <a href="https://www.alisa-kolot.com">Alisa Kolot</a> created original music and sourced recordings for this project.
         <p>Designed + built app, deployed on microcontroller (Raspberry Pi).</p>
 
-images_desc: [
+media: [
     {image: "alterspace/langdell-tablet.jpg", desc: "Sound and lighting app design"},
     {image: "alterspace/langdell-ipad.jpg", desc: "Langdell Library"},
     {image: "alterspace/langdell-2ndfloor-5.jpg", desc: "Langdell Library, 2nd floor"},
