@@ -103,7 +103,11 @@
             <ul class="project-list">
                 {% for image in page.images_desc %}
                 <li>
-                    <a target="_blank" href="/assets/img/{{image.image}}">
+                    {% if image.link %}
+                        <a target="_blank" href="{{image.link}}">
+                    {% else %}
+                        <a target="_blank" href="/assets/img/{{image.image}}">
+                    {% endif%}
                         <img src="/assets/img/{{image.image}}" class="{{image.img_class}}"/>
                     </a>
                     <label class="image-description">{{ image.desc }}</label>
