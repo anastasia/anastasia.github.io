@@ -10,7 +10,7 @@ media: [{image: "office-phone/phone-parts.jpg"},
         {video: "office-phone/on-off.mp4", desc: "Reading numbers and recording whether rotary dial is currently being used using LEDs", type: "video"}
         ]
 tags: 
-    - other
+    - hardware
 description: >-
     <p>Lots of people pass through <a href="https://lil.law.harvard.edu">LIL</a>. This was a small sketch to record
     common questions we wanted to ask everyone. Questions like "what does your dream library look like?", and 
