@@ -16,7 +16,7 @@ description: >-
         <p>Designed + built app, deployed on microcontroller (Raspberry Pi).</p>
 
 media: [
-    {image: "alterspace/langdell-tablet.jpg", desc: "Sound and lighting app design"},
+    {image: "alterspace/langdell-tablet.jpg", desc: "Sound and lighting app design. Credit: Sasha Pedro"},
     {image: "alterspace/langdell-ipad.jpg", desc: "Langdell Library"},
     {image: "alterspace/langdell-2ndfloor-5.jpg", desc: "Langdell Library, 2nd floor"},
     {image: "alterspace/spl.jpg", desc: "Somerville Public Library"},
