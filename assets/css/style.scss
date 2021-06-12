@@ -9,7 +9,7 @@
 
 $color-black: #2f2f2f;
 $color-gray: #777;
-$color-yellow: #FFF650;
+$color-yellow: #fffa96;
 $color-blue: #2929fa;
 $color-light-blue: #007bff;
 $color-red: orangered;
@@ -50,6 +50,7 @@ li {
 
 a {
   color: $color-blue;
+
   &:hover, &:focus, &:active {
     color: $color-blue;
     font-weight: 700;
@@ -68,11 +69,28 @@ li > img, li > a > img {
   margin-bottom: 0;
 }
 
+#mark {
+  border-radius: 50%;
+  border: 1px solid $color-black;
+  padding: .1em .4em;
+  font-size: 1em;
+  color: $color-black;
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    background-color: $color-blue;
+    color: white;
+    border: 1px solid $color-blue;
+    font-style: normal;
+  }
+}
+
 #menu {
   transition: all 0.3s;
+  font-size: .8em;
 }
 
 #exit-menu {
+  font-size: .8em;
   z-index: 999;
   right: 0;
   top: 0;
@@ -128,7 +146,7 @@ li > img, li > a > img {
 }
 
 .header {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 header li {
@@ -141,6 +159,7 @@ img {
   @include media-breakpoint-down(md) {
     max-width: 100% !important;
   }
+
   &.border {
     border: 1px solid $color-gray;
   }
@@ -148,6 +167,8 @@ img {
 
 .site-description {
   color: $color-gray;
+  font-size: 0.8em;
+  margin-bottom: 0.8em;
 }
 
 #sidebar {
@@ -248,9 +269,11 @@ ul.liltalks {
   &.green, &.hardware {
     background-color: forestgreen;
   }
+
   &.black, &.pm {
     background-color: black;
   }
+
   &.black, &.ads {
     background-color: #c800ff;
   }
