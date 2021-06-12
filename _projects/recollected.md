@@ -3,7 +3,7 @@ layout: project
 title:  "Recollected"
 categories: projects
 slug: recollected
-order: 3
+order: 5
 show: true
 website: "https://recollected.github.io"
 description: >-

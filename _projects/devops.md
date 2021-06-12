@@ -3,7 +3,7 @@ layout: project
 title:  "devops"
 categories: projects
 slug: devops
-order: 7
+order: 8
 show: true
 images: ["devops.gif", "devops/posters.png"]
 tags: 

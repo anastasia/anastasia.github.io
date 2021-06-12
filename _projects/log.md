@@ -4,7 +4,7 @@ title:  "log"
 categories: projects
 slug: log
 show: true
-order: 7
+order: 9
 recordings: [
 {src: "a_protest.mp3", date: "?, '16", desc: "A protest, ?"},
 {src: "cry.m4a", date: "January '17", desc: "why are you weird with people who cry?"},

@@ -104,19 +104,20 @@
           {% for obj in page.media %}
         <li>
           {% if obj.link %}
-          <a target="_blank" href="{{obj.link}}">
-            {% else %}
+            <a target="_blank" href="{{obj.link}}">
+          {% else %}
             <a target="_blank" href="/assets/img/{{obj.obj}}">
-              {% endif%}
-              {% if obj.type == 'video' %}
-              <video width="850" controls>
-                <source src="/assets/img/{{ obj.video }}" type="video/mp4">
-              </video>
-              {% else %}
-                  <img src="/assets/img/{{obj.image}}" class="{{image.img_class}}"/>
-              {% endif %}
-            </a>
-            <label class="image-description">{{ obj.desc }}</label>
+          {% endif %}
+          {% if obj.type == 'video' %}
+          <video width="850" controls>
+            <source src="/assets/img/{{ obj.video }}" type="video/mp4">
+          </video>
+          {% else %}
+          {{image}}
+              <img src="/assets/img/{{obj.image}}" class="{{obj.class}}"/>
+          {% endif %}
+          </a>
+          <label class="image-description">{{ obj.desc }}</label>
         </li>
         {% endfor %}
       </ul>

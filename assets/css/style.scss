@@ -141,7 +141,7 @@ img {
   @include media-breakpoint-down(md) {
     max-width: 100% !important;
   }
-  &.bus_ad {
+  &.border {
     border: 1px solid $color-gray;
   }
 }
