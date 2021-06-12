@@ -7,7 +7,7 @@ slug: hjwg
 show: true
 website: "https://mutualaidmamas.com"
 description: >-
-        <p>Know Your Renters Rights bus ad campaign.</p>
+        <p>Know Your Renters Rights bus ad campaign </p>
         <p>Attempted to create something eyecatching and joyful to capture riders' attention.</p>
 
 media: [
