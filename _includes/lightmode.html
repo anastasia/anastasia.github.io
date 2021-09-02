@@ -1,0 +1,35 @@
+<div class="container">
+  <a href="#" id="mode-switch" title="Switch light mode" onclick="toggleMode()">
+    {% for icon in site.icons %}
+    {% if icon.type == 'lightmode' and icon.name == 'moon' %}
+    <span class="light-icon" id="moon-icon">
+        {{ icon }}
+      </span>
+    {% endif %}
+    {% if icon.type == 'lightmode' and icon.name == 'sun' %}
+    <span class="light-icon" id="sun-icon">
+        {{ icon }}
+      </span>
+    {% endif %}
+    {% endfor %}
+  </a>
+</div>
+<script>
+    let lightmode = 'sun';
+    $('#sun-icon').hide()
+
+    function toggleMode() {
+        if (lightmode === 'sun') {
+            $('#moon-icon').hide()
+            $('#sun-icon').show()
+            lightmode = 'moon'
+            $('body').removeClass('light-mode').addClass('dark-mode');
+        } else {
+            $('#moon-icon').show()
+            $('#sun-icon').hide()
+            lightmode = 'sun'
+            $('body').removeClass('dark-mode').addClass('light-mode');
+        }
+    }
+
+</script>

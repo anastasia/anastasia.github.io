@@ -7,8 +7,8 @@ slug: hjwg
 show: true
 website: "https://mutualaidmamas.com"
 description: >-
-        <p>Know Your Renters Rights bus ad campaign </p>
-        <p>Attempted to create something eyecatching and joyful to capture riders' attention.</p>
+        <p>Know Your Renters Rights bus ad campaign as part of a housing justice group in my local mutual aid, <a href="https://mutualaidmamas.com">MAMAS</a>.</p>
+        <p>Attempted to create something eye-catching and joyful to capture riders' attention, communicate hope, togetherness.</p>
 
 media: [
     {image: "bus-ads/english.png", desc: "First campaign - English poster", class: "border"},

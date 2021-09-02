@@ -3,11 +3,11 @@ layout: project
 title:  "old ads"
 categories: projects
 slug: old-ads
-order: 999
+order: 20
 show: true
 description: >-
     <p>I spent a couple years in advertising (long, long ago).</p>
-    <p>Here are some failed and greenlit projects</p>
+    <p>Here are some failed and green-lit projects</p>
 media: [
     {image: "wk/wordstock-outside.jpg", desc: "Outside of Powell's Books in Portland Oregon"},
     {image: "wk/wordstock-wwchair.jpg", desc: "Wordstock ad in the newspaper"},
