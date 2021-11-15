@@ -27,8 +27,14 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-gem "nokogiri", ">= 1.10.8"
+
+
+gem "nokogiri", ">= 1.12.5"
+
+gem "addressable", ">= 2.8.0"
 
 gem "sprockets", "~> 3.7"
 
 gem "webrick"
+
+gem "kramdown", ">= 2.3.1"
