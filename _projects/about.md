@@ -3,7 +3,7 @@ layout: page
 title: 👋
 permalink: /about/
 description:  >-
-     <p>Hello! My name is Anastasia. I'm a creative technologist and visiting research associate
+     <p>Hello! My name is Anastasia. I'm a creative technologist and visiting researcher
           at MIT's <a target="_blank" href="https://digitalhumanities.mit.edu/">Digital
             Humanities lab</a>.
           Before that, I was designer and lead creative technologist at
