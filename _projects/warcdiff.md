@@ -14,8 +14,6 @@ tags: ["code", "design"]
 media: [
 {image: "warcdiff/site.png", class: "border", desc: "Warcdiff allows an extensive side-by-side comparison"},
 {image: "warcdiff/diff.png", class: "border", desc: "Warcdiff shows a breakdown in changes that might be invisible to the naked eye"},
-{image: "warcdiff/overlay.png", class: "border", desc: "Allows you to overlay the two archives for visual diffing"},
-{image: "warcdiff/overlay-transparent.png", class: "border"},
 {image: "warcdiff/html-diff.png", class: "border", desc: "Is able to show a diff of any asset"},
 ]
 ---
