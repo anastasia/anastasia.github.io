@@ -26,10 +26,12 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "jekyll-assets", {
-  group: :jekyll_plugins
-}
+gem "nokogiri", ">= 1.12.5"
 
-gem "nokogiri", ">= 1.10.8"
+gem "addressable", ">= 2.8.0"
 
 gem "sprockets", "~> 3.7"
+
+gem "webrick"
+
+gem "kramdown", ">= 2.3.1"

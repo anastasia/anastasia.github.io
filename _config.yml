@@ -16,7 +16,7 @@
 title: "?"
 email: anastasia.aizman@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A small stream of projects & thoughts
+  projects & thoughts
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://anastasia.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  anastasia
@@ -32,6 +32,8 @@ collections:
     output: true
     permalink: /:collection/:path
     layout: project
+  icons:
+    output: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

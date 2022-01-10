@@ -20,15 +20,19 @@
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <meta name="description" content="A stream of projects & thoughts"/>
-  <meta name="keywords" content="design, code, libraries, library, experiments, anastasia aizman"/>
+  {% if page.script %}
+  <script src="{{ '/assets/js/' | append: page.script }}"></script>
+  {% endif %}
   <title>A stream of projects and thoughts</title>
 </head>
 <body>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-12">
+    <div class="col-11">
       {% include header.html %}
+    </div>
+    <div class="col-1">
+      {% include lightmode.html %}
     </div>
   </div>
   <div class="row">
@@ -101,26 +105,39 @@
       {% endif %}
 
       <ul class="project-list">
-          {% for obj in page.media %}
+        {% for obj in page.media %}
         <li>
           {% if obj.link %}
           <a target="_blank" href="{{obj.link}}">
             {% else %}
-            <a target="_blank" href="/assets/img/{{obj.obj}}">
-              {% endif%}
+            <a target="_blank" href="/assets/img/{{obj.image}}">
+              {% endif %}
               {% if obj.type == 'video' %}
               <video width="850" controls>
                 <source src="/assets/img/{{ obj.video }}" type="video/mp4">
               </video>
               {% else %}
-                  <img src="/assets/img/{{obj.image}}" class="{{image.img_class}}"/>
+              <img src="/assets/img/{{obj.image}}" class="{{obj.class}}"/>
               {% endif %}
             </a>
             <label class="image-description">{{ obj.desc }}</label>
         </li>
         {% endfor %}
       </ul>
+      {% if page.recordings %}
 
+      <ul class="list-inline recordings-list">
+        {% for rec in page.recordings %}
+        <li class="recording list-inline-item" id="recording-{{ rec.date | replace: '/', '-' }}"
+            data-date="{{rec.date}}" title="{{rec.desc}}">
+          <audio>
+            <source src="/assets/sound/{{rec.src}}">
+          </audio>
+          <div class="recording-date">{{ rec.date }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
       {% if page.carousel_1 %}
 
       <div id="carouselExampleControls2" class="carousel slide" data-interval="false">
@@ -150,12 +167,11 @@
         {{page.carousel_1_desc}}
       </div>
       {% endif %}
-
-
       {% endif %}
 
     </main>
   </div>
 </div>
 </body>
+
 </html>

@@ -3,7 +3,7 @@ layout: project
 title:  "LILFest"
 categories: projects
 slug: lilfest
-order: 2
+order: 5
 show: true
 description: >-
     <p>Art direction and design to make a work retreat a little more special, created using found office supplies.</p>

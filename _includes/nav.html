@@ -1,12 +1,12 @@
 <ul>
   <li>
+    <a href="/" id="mark">&#8704;</a>
     <a href="#" class="d-sm-inline d-md-none float-right h5"
-       id="exit-menu" style="color: blue;">&#8811;</a>
-    <span class="d-xs-none d-sm-none d-md-inline site-description">
-        {{ site.description | default: site.github.project_tagline }}
-    </span>
+       id="exit-menu" style="color: blue;">close &#8594;</a>
   </li>
-  <br/>
+  <li class="d-xs-none d-sm-none d-md-block site-description">
+    {{ site.description | default: site.github.project_tagline }}
+  </li>
   {% for page in site.pages %}
   {% if page.permalink %}
   <li class="list-item page">

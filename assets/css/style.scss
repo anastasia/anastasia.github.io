@@ -9,8 +9,8 @@
 
 $color-black: #2f2f2f;
 $color-gray: #777;
-$color-yellow: #FFF650;
-$color-blue: #2929fa;
+$color-yellow: #fffa96;
+$color-blue: #002aff;
 $color-light-blue: #007bff;
 $color-red: orangered;
 
@@ -50,13 +50,20 @@ li {
 
 a {
   color: $color-blue;
+  text-decoration: underline;
+
   &:hover, &:focus, &:active {
     color: $color-blue;
     font-weight: 700;
     text-decoration: underline;
     font-style: italic;
+  }
 
-    //padding-bottom: 3px;
+}
+
+.project-links {
+  a {
+    text-decoration: none;
   }
 }
 
@@ -68,19 +75,45 @@ li > img, li > a > img {
   margin-bottom: 0;
 }
 
+#mark {
+  border-radius: 50%;
+  border: 1px solid $color-black;
+  padding: .1em .4em;
+  font-size: 1em;
+  color: $color-black;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    background-color: $color-blue;
+    color: white;
+    border: 1px solid $color-blue;
+    font-style: normal;
+  }
+}
+
 #menu {
-  transition: all 0.3s;
+  font-size: .8em;
 }
 
 #exit-menu {
+  font-size: .8em;
   z-index: 999;
   right: 0;
   top: 0;
 }
 
+#mode-switch {
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+  float: right;
+  margin-top: 1em;
+}
+
 #sidebar {
   overflow-y: scroll;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
   transition: all 0.3s;
@@ -89,6 +122,7 @@ li > img, li > a > img {
   position: fixed;
   height: 100vh;
   width: 250px;
+  top: 1em;
   @include media-breakpoint-down(sm) {
     margin-left: -250px;
     margin-top: 0;
@@ -128,7 +162,7 @@ li > img, li > a > img {
 }
 
 .header {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 header li {
@@ -141,19 +175,32 @@ img {
   @include media-breakpoint-down(md) {
     max-width: 100% !important;
   }
-  &.bus_ad {
+
+  &.border {
     border: 1px solid $color-gray;
   }
 }
 
 .site-description {
   color: $color-gray;
+  font-size: 0.8em;
+  margin-bottom: 1.8em;
 }
 
 #sidebar {
   .site-description {
     @include media-breakpoint-down(md) {
       display: none;
+    }
+  }
+
+  .project {
+    a {
+      text-decoration: none;
+
+      &:hover, &:active, &:focus {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -179,8 +226,13 @@ img {
   max-width: 850px;
 }
 
+li.list-item.page {
+  color: $color-blue;
+}
+
 li.list-item.page > a {
   color: $color-gray;
+  text-decoration: none;
 }
 
 .carousel-control-next,
@@ -248,11 +300,86 @@ ul.liltalks {
   &.green, &.hardware {
     background-color: forestgreen;
   }
+
   &.black, &.pm {
     background-color: black;
   }
+
   &.black, &.ads {
     background-color: #c800ff;
   }
 }
 
+
+body.dark-mode {
+  background: #262626;
+  color: #e1e1e1;
+
+  #sidebar {
+    background: #262626;
+    color: #e1e1e1;
+  }
+
+  p {
+    color: white;
+  }
+
+  a {
+    color: #ffdadf;
+
+    &:hover, &:active, &:focus {
+      color: #ff4dae;
+    }
+  }
+
+  #mark {
+    border-color: #e1e1e1;
+    color: #e1e1e1;
+
+    &:hover, &:active, &:focus {
+      border-color: #ff4dae;
+      background: #ff4dae;
+      color: #262626;
+    }
+  }
+
+  li.list-item.page {
+    color: #ff4dae;
+  }
+
+  .site-description {
+    color: #e1e1e1;
+  }
+
+  ul.tags-key {
+    li {
+      color: #b5b5b5 !important;
+    }
+  }
+
+  .pixel {
+    &.black, &.pm {
+      background-color: white;
+    }
+
+    &.blue, &.design {
+      background-color: #ffbc31;
+    }
+  }
+
+  img {
+    &.border {
+      border: 1px solid #cfcfcf;
+    }
+  }
+
+  #mode-switch {
+    a {
+      color: #e1e1e1;
+
+      &:hover, &:active, &:focus {
+      }
+    }
+  }
+
+}

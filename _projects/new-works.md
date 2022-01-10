@@ -3,7 +3,7 @@ layout: project
 title:  "New Works"
 categories: projects
 slug: new-works
-order: 1
+order: 7
 show: true
 description: >-
     <p>A poster for <a target="_blank" href="https://lil.law.harvard.edu">Library Innovation Lab</a> fellows' final projects presentation.</p>

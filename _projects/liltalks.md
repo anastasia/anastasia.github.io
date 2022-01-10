@@ -3,8 +3,8 @@ layout: project
 title:  "LILTalks"
 categories: projects
 slug: liltalks
-order: 5
-show: false
+order: 15
+show: true
 description: >-
     <p>LILTalks are sometimes-weekly, casual conversations about things that people find interesting.</p>
     <p>These Friday talks would not exist without the enthusiasm and curiosity of my colleagues.</p>
@@ -39,6 +39,7 @@ description: >-
         <li>Derby Dreaming: Big horses, big data, and the road to America's biggest race</li>
         <li>Mary Alice Fontenot</li>
         <li>Tap dance</li>
+        <li>Stitching</li>
         <li>Amazingly Tiny, Z-scale Model City</li>
         <li>K-Pop</li>
         <li>Deep-dive into Beyoncé's Homecoming Special</li>

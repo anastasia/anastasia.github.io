@@ -8,7 +8,7 @@ show: true
 github: harvard-lil/colors
 website: "https://colors.lil.tools/"
 description: >-
-    <p>Some experiments with the <a target="_blank" href="https://case.law">Caselaw Access Project</a> data</p>
+    <p>Some solo experiments with Recurrent Neural Networks and visualizations with the <a target="_blank" href="https://case.law">Caselaw Access Project</a> data for demonstrative purposes.</p>
    
 
 tags: 
@@ -16,8 +16,8 @@ tags:
     - design
 images: []
 media: [
-    {image: "cap-experiments/colors.png", desc: "What is the color of case law?",  link: "https://colors.lil.tools/"},
     {image: "cap-experiments/witch.png", desc: "All instances of the word 'witch'", link: "https://case.law/exhibits/witchcraft"},
+    {image: "cap-experiments/colors.png", desc: "What is the color of case law?",  link: "https://colors.lil.tools/"},
 ]
 ---
 
