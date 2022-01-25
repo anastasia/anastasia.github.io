@@ -92,12 +92,12 @@ li > img, li > a > img {
   }
 }
 
-#menu {
+#menu, #exit-menu {
   font-size: .8em;
+  color: $color-blue;
 }
 
 #exit-menu {
-  font-size: .8em;
   z-index: 999;
   right: 0;
   top: 0;
@@ -128,7 +128,7 @@ li > img, li > a > img {
     margin-top: 0;
     display: none;
     top: 0;
-    box-shadow: 1px 0 10px #e6e4e4;
+    box-shadow: 1px 0 3px #979797;
 
     &.active {
       margin-left: 0;
@@ -380,6 +380,9 @@ body.dark-mode {
       &:hover, &:active, &:focus {
       }
     }
+  }
+  #menu, #exit-menu {
+    color: #ff4dae;
   }
 
 }
