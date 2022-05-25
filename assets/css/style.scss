@@ -179,6 +179,10 @@ img {
   &.border {
     border: 1px solid $color-gray;
   }
+
+  &.phone-small {
+    width: 360px;
+  }
 }
 
 .site-description {
@@ -381,6 +385,7 @@ body.dark-mode {
       }
     }
   }
+
   #menu, #exit-menu {
     color: #ff4dae;
   }

@@ -13,10 +13,12 @@
   <!-- custom -->
   <script src="{{ '/assets/js/menu.js' }}"></script>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet"
+        href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -72,11 +74,13 @@
           </div>
           {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+           data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+           data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -101,26 +105,32 @@
       {% endfor %}
       {% if page.slug == 'stacker' %}
       <iframe src="//view.stacker.cc/newsbound/fog_demo/index.html?embed=true" name="nb-stack"
-              class="newsbound-embedded" allowfullscreen="" width="675" height="380" frameborder="0"></iframe>
+              class="newsbound-embedded" allowfullscreen="" width="675" height="380"
+              frameborder="0"></iframe>
       {% endif %}
 
       <ul class="project-list">
         {% for obj in page.media %}
         <li>
+          {% if obj.image %}
           {% if obj.link %}
           <a target="_blank" href="{{obj.link}}">
-            {% else %}
-            <a target="_blank" href="/assets/img/{{obj.image}}">
-              {% endif %}
-              {% if obj.type == 'video' %}
-              <video width="850" controls>
-                <source src="/assets/img/{{ obj.video }}" type="video/mp4">
-              </video>
-              {% else %}
-              <img src="/assets/img/{{obj.image}}" class="{{obj.class}}"/>
-              {% endif %}
-            </a>
-            <label class="image-description">{{ obj.desc }}</label>
+            <img src="/assets/img/{{obj.image}}" class="{{obj.class}}"/>
+          </a>
+          {% else %}
+          <a target="_blank" href="/assets/img/{{obj.image}}">
+            <img src="/assets/img/{{obj.image}}" class="{{obj.class}}"/>
+          </a>
+          {% endif %}
+          {% else %}
+          {% if obj.type == 'video' %}
+          <video width="850" controls class="{{obj.class}} embed-responsive video">
+            <source src="/assets/img/{{ obj.video }}" type="video/mp4">
+          </video>
+
+          {% endif %}
+          {% endif %}
+          <label class="image-description">{{ obj.desc }}</label>
         </li>
         {% endfor %}
       </ul>
@@ -153,11 +163,13 @@
           </div>
           {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+           data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+           data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
