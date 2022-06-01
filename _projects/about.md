@@ -10,7 +10,7 @@ description:  >-
           Harvard's <a target="_blank" href="https://lil.law.harvard.edu">Library Innovation Lab</a>.
           I am interested in open access, housing, immigration, people power.</p>
      <p>
-        Links: <a href="https://docs.google.com/document/d/1aRSSxvVN9Vb_sY839Wru87sxWtF4kVNSnzF-RYDvnN4/edit?usp=sharing">
+        Links: <a href="https://bit.ly/aizman-resume">
         CV
         </a>, <a href="https://github.com/anastasia/">code</a>
      </p>
