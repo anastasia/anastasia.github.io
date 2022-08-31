@@ -15,19 +15,30 @@
   </a>
 </div>
 <script>
-    let lightmode = 'sun';
-    $('#sun-icon').hide()
-
+    let lightmode = localStorage.getItem("lightmode");
+    console.log("getting lightmode", lightmode);
+    lightmode = lightmode ? lightmode : "sun";
+    if (lightmode === "sun") {
+        $('#moon-icon').show();
+        $("#sun-icon").hide();
+        $('body').removeClass('dark-mode').addClass('light-mode');
+    } else {
+        $('body').removeClass('light-mode').addClass('dark-mode');
+        $('#moon-icon').hide();
+        $("#sun-icon").show();
+    }
     function toggleMode() {
         if (lightmode === 'sun') {
-            $('#moon-icon').hide()
-            $('#sun-icon').show()
-            lightmode = 'moon'
+            $('#moon-icon').hide();
+            $('#sun-icon').show();
+            lightmode = 'moon';
+            localStorage.setItem("lightmode", "moon");
             $('body').removeClass('light-mode').addClass('dark-mode');
         } else {
-            $('#moon-icon').show()
-            $('#sun-icon').hide()
-            lightmode = 'sun'
+            $('#moon-icon').show();
+            $('#sun-icon').hide();
+            lightmode = 'sun';
+            localStorage.setItem("lightmode", "sun");
             $('body').removeClass('dark-mode').addClass('light-mode');
         }
     }
