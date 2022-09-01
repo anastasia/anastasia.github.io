@@ -8,8 +8,8 @@ description:  >-
             <img src="/assets/img/greenline.png" class="img-fluid"/>
         </div>
         <div class="col-sm-6 col-xs-12">
-            <p>Hello! My name is Asya. I am a student at MIT's <a href="https://dusp.mit.edu/">DUSP</a>. 
-            Before that, I was a creative technologist & visiting researcher at MIT's 
+            <p>Hello! My name is Asya. Right now, I am a student at MIT's <a href="https://dusp.mit.edu/">DUSP</a>. 
+            Before, I was a creative technologist & visiting researcher at MIT's 
             <a target="_blank" href="https://digitalhumanities.mit.edu/">Digital Humanities Lab</a>
             and lead creative technologist & designer at Harvard's 
             <a target="_blank" href="https://lil.law.harvard.edu">Library Innovation Lab</a>.
@@ -18,7 +18,7 @@ description:  >-
                 <a href="https://bit.ly/aizman-cv">CV</a>,
                 <a href="https://github.com/anastasia/">code</a>
             </p>
-            <p>Say hello: aizman-at-mit.edu</p>
+            <p>Say hello: aizman @ mit.edu</p>
         </div>
      </div>
 ---

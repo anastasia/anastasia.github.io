@@ -39,6 +39,14 @@ html, body {
 
 body {
   font-family: "hk_grotesk", sans-serif;
+  @include media-breakpoint-up(lg) {
+    font-size: 13px;
+    letter-spacing: 0.03em;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
   color: $color-black;
   padding: 0;
 }
