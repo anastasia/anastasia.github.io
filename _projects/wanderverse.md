@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "The Wanderverse Project"
-order: -0.5
+order: 1
 categories: projects
 slug: wanderverse
 show: true 

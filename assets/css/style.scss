@@ -305,11 +305,15 @@ ul.liltalks {
     background-color: forestgreen;
   }
 
+  &.orange, &.writing {
+    background-color: darkorange;
+  }
+
   &.black, &.pm {
     background-color: black;
   }
 
-  &.black, &.ads {
+  &.magenta, &.ads {
     background-color: #c800ff;
   }
 }
@@ -324,7 +328,7 @@ body.dark-mode {
     color: #e1e1e1;
   }
 
-  p {
+  p, li {
     color: white;
   }
 
@@ -390,4 +394,9 @@ body.dark-mode {
     color: #ff4dae;
   }
 
+}
+
+.antemama {
+  font-family: serif;
+  font-size: 0.9em;
 }

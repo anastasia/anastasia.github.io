@@ -4,7 +4,7 @@ title: Chronolawgic (WIP)
 name: Chronolawgic (WIP)
 categories: projects
 slug: chronolawgic
-order: 1
+order: 6
 show: true
 github: "harvard-lil/capstone"
 website: "https://case.law/labs/chronolawgic/timeline/"

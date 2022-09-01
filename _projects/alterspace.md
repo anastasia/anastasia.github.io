@@ -4,7 +4,7 @@ title:  "Alterspace"
 categories: projects
 slug: alterspace
 show: true
-order: 0
+order: 2
 github: "harvard-lil/alter-space"
 website: "https://lil.law.harvard.edu/projects/alterspace/"
 description: >-

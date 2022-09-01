@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Massachusetts Evictions Dashboard"
-order: -1
+order: 0
 categories: projects
 slug: evictions
 show: true

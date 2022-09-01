@@ -4,7 +4,7 @@ title: Warcdiff
 name: Warcdiff
 categories: projects
 slug: warcdiff
-order: 5
+order: 7
 show: true
 github: "harvard-lil/WARC-diff-tools/"
 description: >-

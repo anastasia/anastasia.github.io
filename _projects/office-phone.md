@@ -3,7 +3,7 @@ layout: project
 title:  "Office Phone"
 categories: projects
 slug: office-phone
-order: 5
+order: 12
 show: true
 media: [{image: "office-phone/phone-parts.jpg"}, 
         {video: "office-phone/light-blinking.mp4", desc: "Picking up number from rotary dial, switching on LED", type: "video"},

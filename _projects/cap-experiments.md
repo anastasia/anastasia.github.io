@@ -3,7 +3,7 @@ layout: project
 title:  "CAP experiments"
 categories: projects
 slug: cap-experiments
-order: 5
+order: 9
 show: true
 github: harvard-lil/colors
 website: "https://colors.lil.tools/"
