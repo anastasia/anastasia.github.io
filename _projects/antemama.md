@@ -13,7 +13,7 @@ description: >-
         <a href="https://journals.womenshistory.org/journal/6255682a855347114796b779">National Women's History Museum</a> 
         as part of the Women Writing History: A Coronavirus Journaling Project, and
         excerpted in <a href="https://www.nytimes.com/2022/04/21/arts/design/women-coronavirus-pandemic-journals.html">The New York Times</a>.</p>
-        <p>Below is a passage and some handy information if you or a loved one are considering getting pregnant and being hospitalized in the next pandemic.</p>
+        <p>Below is a passage and some handy information if you or a loved one are considering getting pregnant and being hospitalized in the next pandemic. You can read the rest of the essay <a href="https://journals.womenshistory.org/journal/6255682a855347114796b779">here</a>.</p>
         <hr/>
         <p class="antemama">
         <b>Secrets to Passing a Blood Pressure Test The Doctors Don’t Want You to Know About:</b>
