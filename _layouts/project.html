@@ -60,30 +60,18 @@
       </div>
       {% if page.carousel_0 %}
 
-      <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+      <div id="carouselExampleControls" class="carousel " data-interval="false">
         <div class="carousel-inner">
           {% for image in page.carousel_0 %}
           <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
-            <img class="d-block w-100" src="/assets/img/{{image.image}}"
+            <img class="d-block m-auto" src="/assets/img/{{image.image}}"
                  alt="{% if image.desc %}{{ image.desc }}{% endif %}">
             {% if image.desc %}
-            <div class="carousel-caption d-none d-md-block">
-              <p class="image-description">{{ image.desc }}</p>
-            </div>
+              <p class="image-description text-center mt-5">{{ image.desc }}</p>
             {% endif %}
           </div>
           {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-           data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-           data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
       {% if page.carousel_0_desc %}
       <div class="description-text carousel-description">
