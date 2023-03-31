@@ -13,11 +13,11 @@ description:  >-
              lead creative technologist & designer at Harvard's 
             <a target="_blank" href="https://lil.law.harvard.edu">Library Innovation Lab</a>. 
             <br/><br/>
-            Currently, I am a graduate student at the <a href="https://dusp.mit.edu/">Department of Urban Studies and Planning</a>.
+            Currently, I am a graduate student at the <a href="https://dusp.mit.edu/">Department of Urban Studies and Planning</a> at MIT.
               I am interested in housing, open access, people power.</p>
              <p>
-                <a href="https://bit.ly/aizman-cv">CV</a>,
-                <a href="https://github.com/anastasia/">code</a>
+                <a target="_blank" href="https://bit.ly/aizman-cv">CV</a>,
+                <a target="_blank" href="https://github.com/anastasia/">code</a>
             </p>
             <p>Say hello: aizman @ mit.edu</p>
         </div>
