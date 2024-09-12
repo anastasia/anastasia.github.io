@@ -38,14 +38,13 @@ html, body {
 }
 
 body {
-  font-family: "hk_grotesk", sans-serif;
+  font-family: "WorkSans", sans-serif;
+  font-weight: 300;
   @include media-breakpoint-up(lg) {
     font-size: 13px;
-    letter-spacing: 0.03em;
   }
   @include media-breakpoint-only(md) {
     font-size: 14px;
-    letter-spacing: 0.04em;
   }
   color: $color-black;
   padding: 0;
@@ -62,7 +61,7 @@ a {
 
   &:hover, &:focus, &:active {
     color: $color-blue;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: underline;
     font-style: italic;
   }
@@ -407,4 +406,31 @@ body.dark-mode {
 .antemama {
   font-family: serif;
   font-size: 0.9em;
+}
+
+#about-container {
+  font-size: 2em;
+  a {
+    text-decoration: none;
+    // font-weight: 700;
+  }
+  .centered-items {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+  }
+  // .row {
+  //   width: auto;
+  //   border: 1px solid blue;
+  // }
+  // .flex-item {
+  //   background-color: tomato;
+  //   padding: 5px;
+  //   margin: 10px;
+  //   line-height: 20px;
+  //   font-weight: bold;
+  //   font-size: 2em;
+  //   text-align: center;
+  // }
 }

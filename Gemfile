@@ -9,19 +9,27 @@ source 'https://rubygems.org'
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "jekyll", ">= 3.6.3"
+gem "github-pages", "~> 228"  # Adjust the version as needed
+gem "jekyll", "~> 3.9.3"       # Ensure this version is compatible with github-pages
+gem "kramdown", "~> 2.3.1"   # Adjust the version to avoid conflicts
+gem "commonmarker", "~> 0.23.7" # Make sure this is compatible with jekyll and github-pages
+
+
+# gem "jekyll", ">= 3.6.3"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
+
 end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -34,4 +42,4 @@ gem "sprockets", "~> 3.7"
 
 gem "webrick"
 
-gem "kramdown", ">= 2.3.1"
+# gem "kramdown", ">= 2.3.1"

@@ -1,12 +1,17 @@
+<script>
+ function selectedTag(arg) {
+  console.log("selected tag", arg);
+ }
+</script>
 <ul>
   <li class="d-sm-inline d-md-none float-right h5">
 <!--    <a href="/" id="mark">&#8704;</a>-->
     <a href="#" class="d-sm-inline d-md-none float-right h5"
        id="exit-menu">close &#8594;</a>
   </li>
-  <li class="d-xs-none d-sm-none d-md-block site-description">
+  <!-- <li class="d-xs-none d-sm-none d-md-block site-description">
     Asya's projects <br/>& thoughts
-  </li>
+  </li> -->
   {% for page in site.pages %}
   {% if page.permalink %}
   <li class="list-item page">
@@ -19,13 +24,13 @@
   {% for project in sorted_projects %}
   {% if project.show %}
   <li class="list-item project">
+    {% for tag in project.tags %}
+    <span class="pixel {{ tag }}" title="{{tag}}" onclick='selectedTag("{{tag}}")'></span>
+    {% endfor %}
     <a class="" href="/projects/{{ project.slug }}">
       {{ project.slug }}
     </a>
-    {% for tag in project.tags %}
-    <span class="pixel {{ tag }}" title="{{tag}}"></span>
-    {% endfor %}
-
+    
   </li>
   {% endif %}
   {% endfor %}
