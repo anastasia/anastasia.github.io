@@ -6,20 +6,23 @@ description:  >-
      <div class="row" id="about-container">
         <div class="col-sm-12 col-xs-12 col-lg-11 col-md-8">
             <div class="align-middle">
-                <p>My name is Asya (Anastasia) Aizman. I am a PhD student at MIT's <a href="https://dusp.mit.edu/">
-                Department of Urban Studies and Planning</a>. I am affiliated with the <a href="https://mit-spatial-action.github.io/about/">
+                <p>My name is Asya Aizman.<a href="#footnote-1">*</a> I am a PhD student at MIT's <a href="https://dusp.mit.edu/">
+                Department of Urban Studies and Planning</a> studying the privatization of US cities. I am affiliated with the <a href="https://mit-spatial-action.github.io/about/">
                 Spatial Analysis & Action Research Group</a> and the <a href="https://dataplusfeminism.mit.edu/">Data+Feminism Lab</a>.
                 <br/><br/>
                 Previously, I was a creative technologist & visiting researcher at MIT's 
                 <a target="_blank" href="https://digitalhumanities.mit.edu/">Digital Humanities Lab</a> and the
                 lead creative technologist & designer at Harvard's 
-                <a target="_blank" href="https://lil.law.harvard.edu">Library Innovation Lab</a>. 
+                <a target="_blank" href="https://lil.law.harvard.edu">Library Innovation Lab</a>. Before that, I was a graphic designer and a coder. 
                 <br/><br/>
+                
                 <p>    
-                    <a target="_blank" href="https://bit.ly/aizman-cv">CV</a>,
-                    <a target="_blank" href="https://github.com/anastasia/">code</a>
+                    <a target="_blank" href="https://bit.ly/aizman-cv">My resume</a>
+                    <br/>
+                    <a target="_blank" href="https://github.com/anastasia/">github</a>
                 </p>
-                <p>Say hello: aizman @ mit.edu</p>
+                <p>Say hello: aizman at mit.edu</p>
+                <a class="footnote" id="footnote-1">* I also respond to Anastasia :) </a>
         </div>
      </div>
 ---

@@ -373,6 +373,7 @@ body.dark-mode {
   }
 
   .pixel {
+    z-index: 999;
     &.black, &.pm {
       background-color: white;
     }
@@ -412,7 +413,6 @@ body.dark-mode {
   font-size: 2em;
   a {
     text-decoration: none;
-    // font-weight: 700;
   }
   .centered-items {
     right: 50%;
@@ -420,17 +420,8 @@ body.dark-mode {
     transform: translate(50%,50%);
     position: absolute;
   }
-  // .row {
-  //   width: auto;
-  //   border: 1px solid blue;
-  // }
-  // .flex-item {
-  //   background-color: tomato;
-  //   padding: 5px;
-  //   margin: 10px;
-  //   line-height: 20px;
-  //   font-weight: bold;
-  //   font-size: 2em;
-  //   text-align: center;
-  // }
+}
+
+.footnote {
+  font-size: 0.5em;
 }
