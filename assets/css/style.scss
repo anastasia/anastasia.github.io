@@ -219,6 +219,12 @@ img {
       }
     }
   }
+  li.tags-key.selected {
+    > .label {
+      background-color: $color-yellow;
+      color: $color-black;      
+    }
+  }
 }
 
 .project-title {
@@ -397,16 +403,12 @@ body.dark-mode {
   #mode-switch {
     a {
       color: #e1e1e1;
-
-      &:hover, &:active, &:focus {
-      }
     }
   }
 
   #menu, #exit-menu {
     color: #ff4dae;
   }
-
   .project {
     &.selected {
       a {

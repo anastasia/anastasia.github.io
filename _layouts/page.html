@@ -54,10 +54,11 @@
 <script>    
 
   function updateTagText(tag) {
-    let allNodes = document.querySelectorAll('.pixel');
-    allNodes.forEach(node => {
+    let allPixelNodes = document.querySelectorAll('.pixel');
+    allPixelNodes.forEach(node => {
       node.parentElement.classList.remove("selected");
     });
+
     let nodeList = document.querySelectorAll('.pixel.' + tag);
     nodeList.forEach(node => {
       node.parentElement.classList.add("selected");
