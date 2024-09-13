@@ -206,6 +206,11 @@ img {
   }
 
   .project {
+    &.selected {
+      a {
+        background-color: $color-yellow;
+      }
+    }
     a {
       text-decoration: none;
 
@@ -400,6 +405,15 @@ body.dark-mode {
 
   #menu, #exit-menu {
     color: #ff4dae;
+  }
+
+  .project {
+    &.selected {
+      a {
+        background-color: $color-yellow;
+        color: $color-black;
+      }
+    }
   }
 
 }

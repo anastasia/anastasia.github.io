@@ -51,5 +51,30 @@
     </div>
   </div>
 </body>
+<script>    
 
+  function updateTagText(tag) {
+    let allNodes = document.querySelectorAll('.pixel');
+    allNodes.forEach(node => {
+      node.parentElement.classList.remove("selected");
+    });
+    let nodeList = document.querySelectorAll('.pixel.' + tag);
+    nodeList.forEach(node => {
+      node.parentElement.classList.add("selected");
+    });
+
+  }
+  function selectedTag(tag) {
+    let url = new URL(window.location.href);
+    url.searchParams.set('type', tag);
+    window.history.pushState({}, null, url);
+    updateTagText(tag);
+  }
+
+  let url = new URL(window.location.href);
+  let tag = url.searchParams.get('type');
+  if (tag) {
+      updateTagText(tag);
+  }
+</script>
 </html>
