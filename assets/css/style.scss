@@ -11,7 +11,7 @@ $color-black: #2f2f2f;
 $color-gray: #777;
 $color-yellow: #fffa96;
 $color-blue: #002aff;
-$color-light-blue: #007bff;
+$color-light-blue: #3152ff;
 $color-red: orangered;
 
 $xs: 575.98px;
@@ -152,14 +152,20 @@ li > img, li > a > img {
 
 .main-content {
   min-height: 100vh;
+  max-width: 100vw;
   padding: 1em;
+  margin: 1em;
+  position: absolute;
   @include media-breakpoint-up(md) {
     width: calc(100% - 250px);
     transition: all 0.3s;
-    position: absolute;
     top: 0;
     right: 0;
-    padding-top: 2em;
+    padding: 2em;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+    margin-top: 0;
   }
 
   .image-description {
@@ -241,12 +247,6 @@ img {
   }
 }
 
-.description-text {
-  margin-bottom: 1rem;
-  color: #333;
-  font-size: 1.1em;
-  max-width: 850px;
-}
 
 li.list-item.page {
   color: $color-blue;
@@ -321,7 +321,7 @@ ul.liltalks {
   }
 
   &.green, &.hardware {
-    background-color: forestgreen;
+    background-color: #42a017;
   }
 
   &.orange, &.writing {

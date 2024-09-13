@@ -40,10 +40,7 @@
       </div>
 
       <div class="main-content">
-        <div class="description-text">
-          {{ page.description }}
-        </div>
-
+        {{ page.description }}
         {% for image in page.images %}
         <img src="/assets/img/{{image}}">
         {% endfor %}
