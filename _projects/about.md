@@ -17,12 +17,12 @@ description:  >-
                 <br/><br/>
                 
                 <p>    
-                    <a target="_blank" href="https://bit.ly/aizman-cv">My resume</a>
+                    <a target="_blank" href="https://bit.ly/aizman-cv">Resume</a>
                     <br/>
-                    <a target="_blank" href="https://github.com/anastasia/">github</a>
+                    <a target="_blank" href="https://github.com/anastasia/">Github</a>
                 </p>
                 <p>Say hello: aizman at mit.edu</p>
-                <a class="footnote" id="footnote-1">* I also respond to Anastasia :) </a>
+                <p class="footnote" id="footnote-1">* I also respond to Anastasia 🙃 </p>
         </div>
      </div>
 ---
