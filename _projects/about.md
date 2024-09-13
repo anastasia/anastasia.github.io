@@ -22,7 +22,8 @@ description:  >-
                     <a target="_blank" href="https://github.com/anastasia/">Github</a>
                 </p>
                 <p>Say hello: aizman at mit.edu</p>
-                <p class="footnote" id="footnote-1">* I also respond to Anastasia 🙃 </p>
+                <p class="footnote" id="footnote-1">* I also respond to Anastasia, my full/legal name (Asya/Ася is my short name) 
+                <span id="smiley">🙃</span> </p>
         </div>
      </div>
 ---

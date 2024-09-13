@@ -289,7 +289,7 @@ ul.tags-key {
     font-size: 0.8rem;
     margin-bottom: 0;
     color: $color-gray !important;
-    font-style: italic;
+    cursor: pointer;
   }
 }
 
@@ -310,6 +310,7 @@ ul.liltalks {
   display: inline-block;
   border-radius: 50%;
   margin-right: 3px;
+  cursor: pointer;
 
   &.blue, &.design {
     background-color: $color-light-blue;
@@ -441,3 +442,4 @@ body.dark-mode {
 .footnote {
   font-size: 0.5em;
 }
+
