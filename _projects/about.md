@@ -17,7 +17,7 @@ description:  >-
                 <br/><br/>
                 
                 <p>    
-                    <a target="_blank" href="https://bit.ly/aizman-cv">Resume</a>
+                    <a target="_blank" href="https://docs.google.com/document/d/1on4WA75e_TLTDvKy0D742YviqnFBg-nsu-hYHqP9pBo/edit?usp=sharing">Resume</a>
                     <br/>
                     <a target="_blank" href="https://github.com/anastasia/">Github</a>
                 </p>
