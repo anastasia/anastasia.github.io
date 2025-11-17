@@ -36,7 +36,8 @@ media: [
 ]
     
 
-tags:    - hardware
+tags: 
+    - hardware
     - code
     - design
     - pm
