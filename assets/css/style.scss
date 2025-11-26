@@ -187,6 +187,9 @@ li > img, li > a > img {
   ul.keywords {
     padding-top: 0.4em;
     li.article-keyword {
+      &:first {
+        margin-top: 3px !important;
+      }
       font-size: 0.8em;
       float: left;
       div.keyword-container {
@@ -454,6 +457,10 @@ body.dark-mode {
 
     &.blue {
       background-color: #ffbc31;
+    }
+    &.design::before {
+      content: "❦";
+      color: rgb(212, 212, 212);
     }
   }
 
