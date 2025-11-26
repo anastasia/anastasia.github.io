@@ -39,12 +39,12 @@ html, body {
 
 body {
   font-family: "WorkSans", sans-serif;
-  font-weight: 300;
+  font-weight: 320;
   @include media-breakpoint-up(lg) {
-    font-size: 13px;
+    font-size: 0.98em;
   }
   @include media-breakpoint-only(md) {
-    font-size: 14px;
+    font-size: 1em;
   }
   color: $color-black;
   padding: 0;
@@ -57,13 +57,14 @@ li {
 
 a {
   color: $color-blue;
-  text-decoration: underline;
 
   &:hover, &:focus, &:active {
     color: $color-blue;
-    font-weight: 600;
-    text-decoration: underline;
+    font-weight: 500;
     font-style: italic;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
 }
@@ -154,7 +155,6 @@ li > img, li > a > img {
   min-height: 100vh;
   max-width: 100vw;
   padding: 1em;
-  margin: 1em;
   position: absolute;
   @include media-breakpoint-up(md) {
     width: calc(100% - 250px);
@@ -182,6 +182,21 @@ li > img, li > a > img {
   .image-description {
     font-size: 1em;
     width: 100%;
+  }
+
+  ul.keywords {
+    padding-top: 0.4em;
+    li.article-keyword {
+      font-size: 0.8em;
+      float: left;
+      div.keyword-container {
+        padding: 2px 5px;
+        margin-right: 5px;
+        border-color: $color-black;
+        border-width: 1px;
+        border-style: solid;
+      }
+    }
   }
 }
 
@@ -249,8 +264,15 @@ img {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-
 }
+.project-subtitle {
+  font-size: 1.8em;
+  font-weight: 400;
+  color: rgb(56, 56, 56);
+  letter-spacing: 0.01em;
+  margin-bottom: 1em;
+}
+
 
 .project-list {
   li {
@@ -322,30 +344,57 @@ ul.liltalks {
   border-radius: 50%;
   margin-right: 3px;
   cursor: pointer;
-  &.lightblue, &.research {
+  &.research::before {
+    content: "☉";
+    display: inline-block;
+    transform: translateY(0.01em);
+  }
+  &.writing::before {
+    content: "✎";
+    display: inline-block;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  &.code::before {
+    content: "☷";
+  }
+  &.pm::before {
+    content: "☆";
+  }
+  &.ads::before {
+    content: "☢";
+  }
+  &.design::before {
+    content: "❦";
+    color: rgb(67, 67, 67);
+  }
+  &.hardware::before {
+    content: "⚒";
+  }
+  &.lightblue {
     background-color: #00c7f9;
   }
-  &.blue, &.design {
+  &.blue {
     background-color: $color-light-blue;
   }
-
-  &.red, &.code {
+  
+  &.red {
     background-color: $color-red;
   }
 
-  &.green, &.hardware {
+  &.green {
     background-color: #42a017;
   }
 
-  &.orange, &.writing {
+  &.orange {
     background-color: darkorange;
   }
 
-  &.black, &.pm {
+  &.black {
     background-color: black;
   }
 
-  &.magenta, &.ads {
+  &.magenta {
     background-color: #c800ff;
   }
 }
@@ -399,11 +448,11 @@ body.dark-mode {
 
   .pixel {
     z-index: 999;
-    &.black, &.pm {
+    &.black {
       background-color: white;
     }
 
-    &.blue, &.design {
+    &.blue {
       background-color: #ffbc31;
     }
   }
@@ -431,7 +480,9 @@ body.dark-mode {
       }
     }
   }
-
+  .project-subtitle {
+    color: #e1e1e1;
+  }
 }
 
 .antemama {
@@ -440,7 +491,7 @@ body.dark-mode {
 }
 
 #about-container {
-  font-size: 2em;
+  font-size: 1.8em;
   a {
     text-decoration: none;
   }

@@ -44,6 +44,7 @@
     </div>
     <main class="main-content">
       <div class="project-title">{{ page.title }}</div>
+      {% if page.subtitle %}<div class="project-subtitle">{{ page.subtitle }}</div>{% endif %}
       <div class="description-text">
 
         <p class="project-links">
@@ -58,6 +59,15 @@
         </p>
         {{ page.description }}
       </div>
+      {% if page.keywords %}
+      <ul class="keywords">
+        <li class="article-keyword">keywords:&nbsp;</li>
+        {% for keyword in page.keywords %}
+        <li class="article-keyword"><div class="keyword-container">{{ keyword }}</div></li>
+        {% endfor %}
+      </ul>
+      <br/>
+      {% endif %}
       {% if page.carousel_0 %}
 
       <div id="carouselExampleControls" class="carousel " data-interval="false">

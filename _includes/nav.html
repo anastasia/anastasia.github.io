@@ -19,13 +19,14 @@
   {% for project in sorted_projects %}
   {% if project.show %}
   <li class="list-item project">
-    {% for tag in project.tags %}
-    <span class="pixel {{ tag }}" title="{{tag}}" onclick='selectedTag("{{tag}}")'></span>
-    {% endfor %}
-    <a class="" href="/projects/{{ project.slug }}">
+     <a class="" href="/projects/{{ project.slug }}">
       {{ project.slug }}
     </a>
     
+    {% for tag in project.tags %}
+    <span class="pixel {{ tag }}" title="{{tag}}" onclick='selectedTag("{{tag}}")'></span>
+    {% endfor %}
+  
   </li>
   {% endif %}
   {% endfor %}
