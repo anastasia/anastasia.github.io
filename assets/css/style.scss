@@ -166,16 +166,18 @@ li > img, li > a > img {
       max-width: 75vw;
     }
   }
-
-   @include media-breakpoint-up(lg) { 
+  
+  @include media-breakpoint-up(lg) { 
     .description-text, .project-title {
       max-width: 55vw;
     }
-
-   }
+    
+  }
   @include media-breakpoint-down(sm) {
     padding: 0;
     margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
   }
   
 
