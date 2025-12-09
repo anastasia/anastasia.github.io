@@ -56,6 +56,10 @@
           {% if page.website %}
           <span>[<a href="{{ page.website }}"> website </a></span>]
           {% endif %}
+
+          {% if page.article %}
+          <span>[<a href="{{ page.article }}"> article </a></span>] {% if page.DOI %} [<span><a href="{{ page.DOI }}"> {{ page.DOI }} </a></span>] {% endif %}
+          {% endif %}
         </p>
         {{ page.description }}
       </div>
